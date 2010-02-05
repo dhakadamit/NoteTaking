@@ -1,0 +1,11 @@
+note:
+ - content: text
+ - has_many: [notes_tags]
+
+notes_tag:
+ - belongs_to: [note, tag]
+
+tag:
+ - name: string
+ - has_many: [notes_tags]
+

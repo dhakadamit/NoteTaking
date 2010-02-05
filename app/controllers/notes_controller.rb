@@ -22,7 +22,7 @@ class NotesController < ApplicationController
   end
 
   # GET /notes/new
-  # GET /notes/new.xml
+  # GET /notes/new.xml  
   def new
     @note = Note.new
 

@@ -1,7 +1,7 @@
 class CreateNotes < ActiveRecord::Migration
   def self.up
     create_table :notes do |t|
-      t.text :content
+      t.text :content, :null => false
 
       t.timestamps
     end

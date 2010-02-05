@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Serialize a Resource to JavaScript Object Notation (JSON; RFC 4627)
+- !ruby/struct:SM::Flow::P 
+  body: "@return &lt;String&gt; a JSON representation of the Resource"
+full_name: DataMapper::Serialize#to_json
+is_singleton: false
+name: to_json
+params: (*args)
+visibility: public

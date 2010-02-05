@@ -1,0 +1,20 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: By default DataMapper validation errors doesn't have <tt>to_xml</tt> method. This is actually very useful when dealing with remote stateful clients such as Flex/AIR.
+constants: []
+
+full_name: DataMapper::Validate::ValidationErrors
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: to_json
+- !ruby/object:RI::MethodSummary 
+  name: to_xml
+name: ValidationErrors
+superclass: Object

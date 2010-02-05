@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Upper-case first character of a string leave the rest of the string intact
+full_name: String#ucfirst
+is_singleton: false
+name: ucfirst
+params: ()
+visibility: public

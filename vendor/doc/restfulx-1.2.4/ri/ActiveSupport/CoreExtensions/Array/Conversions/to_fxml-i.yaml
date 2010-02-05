@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: xml if block_given?
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Flex friendly XML format (no dashes, etc)
+full_name: ActiveSupport::CoreExtensions::Array::Conversions#to_fxml
+is_singleton: false
+name: to_fxml
+params: (options = {}) {|xml if block_given?| ...}
+visibility: public

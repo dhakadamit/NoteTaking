@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: We mess with default <tt>render</tt> implementation a bit to add support for expressions such as format.fxml { render :fxml =&gt; @foo }
+constants: []
+
+full_name: ActionController
+includes: []
+
+instance_methods: []
+
+name: ActionController
+superclass: 

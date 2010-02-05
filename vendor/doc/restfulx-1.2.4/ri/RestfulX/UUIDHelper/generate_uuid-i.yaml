@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RestfulX::UUIDHelper#generate_uuid
+is_singleton: false
+name: generate_uuid
+params: ()
+visibility: public

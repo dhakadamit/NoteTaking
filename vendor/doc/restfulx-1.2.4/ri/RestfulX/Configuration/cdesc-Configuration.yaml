@@ -1,0 +1,31 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Computes necessary configuration options from the environment. This can be used in Rails, Merb or standalone from the command line.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: We try to figure out the application root using a number of possible options
+  name: APP_ROOT
+  value: "defined?(RAILS_ROOT) ? RAILS_ROOT : defined?(Merb) ? Merb.root : File.expand_path(\".\")"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: RxSettings
+  value: SchemaToYaml::Settings::Core
+full_name: RestfulX::Configuration
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: extract_names
+- !ruby/object:RI::MethodSummary 
+  name: list_as_files
+- !ruby/object:RI::MethodSummary 
+  name: list_mxml_files
+name: Configuration
+superclass: 

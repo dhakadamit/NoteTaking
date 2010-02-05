@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Helps you find duplicates used in schema_to_yaml.rb for cleanup
+full_name: Enumerable#dups
+is_singleton: false
+name: dups
+params: ()
+visibility: public

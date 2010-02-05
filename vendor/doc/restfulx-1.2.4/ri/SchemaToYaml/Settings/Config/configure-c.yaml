@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: self
+comment: 
+full_name: SchemaToYaml::Settings::Config::configure
+is_singleton: true
+name: configure
+params: () {|self| ...}
+visibility: public

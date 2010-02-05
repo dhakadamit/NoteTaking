@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Creates a swfObject Javascript call. You must include swfobject.js to use this. See http://code.google.com/p/swfobject/wiki/documentation for full details and documentation of the swfobject js library.
+full_name: SWFHelper#swfobject
+is_singleton: false
+name: swfobject
+params: (swf_url, params = {})
+visibility: public

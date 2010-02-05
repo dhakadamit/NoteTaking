@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: List files ending in *.as (ActionScript) in a given folder
+full_name: RestfulX::Configuration#list_as_files
+is_singleton: false
+name: list_as_files
+params: (dir_name)
+visibility: public

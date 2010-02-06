@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="ff1a76aa-e59d-4c14-ae51-9a96c4340821" name="Default" comment="" />
-    <ignored path=".idea/" />
-    <ignored path="log/" />
+    <list default="true" readonly="true" id="ff1a76aa-e59d-4c14-ae51-9a96c4340821" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\Blog\public\index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Blog.iml" afterPath="$PROJECT_DIR$/.idea/Blog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+    </list>
+    <ignored path="public/" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="Blog.iws" />
-    <ignored path="public/" />
+    <ignored path="log/" />
+    <ignored path=".idea/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +108,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,7 +175,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,11 +404,11 @@
       <item index="0" class="java.lang.String" itemvalue="Rake.db:create" />
       <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
       <item index="2" class="java.lang.String" itemvalue="Rake.db:drop" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: Blog" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Development: Blog" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.rails:freeze:gems" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.rails:freeze:gems" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Production: Blog" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Development: Blog" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -513,23 +517,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100205111832_create_notes_tags.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="219" selection-end="219" vertical-scroll-proportion="0.27037773">
-          <folding />
-        </state>
+        <state line="8" column="38" selection-start="219" selection-end="219" vertical-scroll-proportion="0.27037773" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/note.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="57" selection-end="57" vertical-scroll-proportion="0.033797216">
-          <folding />
-        </state>
+        <state line="1" column="25" selection-start="57" selection-end="57" vertical-scroll-proportion="0.033797216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100205110545_create_tags.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="123" selection-end="123" vertical-scroll-proportion="0.10139165">
-          <folding />
-        </state>
+        <state line="3" column="36" selection-start="123" selection-end="123" vertical-scroll-proportion="0.10139165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
@@ -541,16 +539,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="532" selection-end="532" vertical-scroll-proportion="0.32008368">
-          <folding />
-        </state>
+        <state line="9" column="27" selection-start="532" selection-end="532" vertical-scroll-proportion="0.32008368" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/notes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="43" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100205094628_create_notes.rb">

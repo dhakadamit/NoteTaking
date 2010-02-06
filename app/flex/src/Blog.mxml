@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:comps="com.notetaking.view.*"
+	xmlns:controller="com.notetaking.controller.*"
+	layout="vertical" width="100%" height="100%"
+	paddingBottom="0" alpha="1"
+	styleName="main"
+	verticalScrollPolicy="auto" horizontalScrollPolicy="auto"
+	creationComplete="initApp();">
+	
+
+	<mx:Script>
+		<![CDATA[
+			import com.adobe.utils.DateUtil;
+			import mx.controls.Alert;
+			
+			private function initApp():void {
+				applicationContent.height = Application.application.height;
+			}
+				
+		]]>
+	</mx:Script>
+	<controller:NoteTakingApplicationController id="frontController"/> 
+	
+		<mx:VBox id="applicationContent" width="1280" paddingTop="0" paddingLeft="20" paddingRight="20" verticalGap="0"
+			horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		</mx:VBox>
+		
+</mx:Application>
+	

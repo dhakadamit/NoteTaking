@@ -22,6 +22,12 @@
       </requirement>
       <source from="config/boot.rb" />
     </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="restfulx" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">

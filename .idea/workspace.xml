@@ -461,7 +461,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Restfulx] : Download gem" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Ignore] : Committing cuz conflicts happening during reverting" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -478,6 +478,7 @@
     <MESSAGE value="[Create notes] : Generated model, migration,views and controller for Note" />
     <MESSAGE value="[Create tags] : Generated model, migration,views and controller for tags. Also created relationship between notes and tags" />
     <MESSAGE value="[Restfulx] : Download gem" />
+    <MESSAGE value="[Ignore] : Committing cuz conflicts happening during reverting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

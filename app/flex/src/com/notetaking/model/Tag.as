@@ -10,7 +10,7 @@ package com.notetaking.model
 		private var _count:Number;
 
 		public function get count():Number {
-			return _count == null ? notes.length : _count;
+			return _count == 0 ? notes.length : _count;
 		}
 
 		public function set count(value:Number):void {

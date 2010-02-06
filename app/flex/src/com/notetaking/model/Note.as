@@ -8,6 +8,7 @@ package com.notetaking.model
 		private var _content:String;
 		private var _createdAt:String;
 		private var _tags:ArrayCollection;
+		private var _namesOfAllTags:String;
 
 		public function get createdAt():String {
 			return _createdAt;
@@ -32,11 +33,14 @@ package com.notetaking.model
 		public function set content(value:String):void {
 			_content = value;
 		}
-
-
-		public function Note()
-		{
+		
+		public function get namesOfAllTags():String {
+			var names:Array = new Array();
+			for each (var tag:Tag in tags) {
+				names.push(tag.name);
+			}
+			_namesOfAllTags = names.join(", ");
+			return _namesOfAllTags;
 		}
-
 	}
 }

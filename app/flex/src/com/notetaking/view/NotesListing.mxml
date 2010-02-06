@@ -16,11 +16,17 @@
 			]]>
 		</mx:Script>
 		
-		<mx:DataGrid dataProvider="{model.notes}">
+		<mx:DataGrid dataProvider="{model.notes}" width="100%">
 			<mx:columns>
 				<mx:DataGridColumn dataField="content" headerText="Content"/>
 				<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
-				<mx:DataGridColumn dataField="tags" headerText="Tags"/>
+				<mx:DataGridColumn headerText="Tags">
+					<mx:itemRenderer>
+						<mx:Component>
+							<mx:Label text="{data.namesOfAllTags}"/>
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
 			</mx:columns>
 		</mx:DataGrid>
 </mx:Canvas>

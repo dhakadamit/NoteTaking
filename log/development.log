@@ -199,12 +199,3 @@ Migrating to CreateNotesTags (20100205111832)
   [4;35;1mTag Load (0.0ms)[0m   [0mSELECT * FROM `tags` [0m
   [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT * FROM `tags` INNER JOIN `notes_tags` ON `tags`.id = `notes_tags`.tag_id WHERE (`notes_tags`.note_id = 1 ) [0m
   [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` INNER JOIN `notes_tags` ON `notes`.id = `notes_tags`.note_id WHERE (`notes_tags`.tag_id = 1 ) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes_tags`[0m
-  [4;35;1mSQL (15.0ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `notes_tags`[0m
-  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m

@@ -18,8 +18,8 @@
 		
 		<mx:DataGrid dataProvider="{model.notes}">
 			<mx:columns>
-				<mx:DataGridColumn dataField="{data.note.content}" headerText="Content"/>
-				<mx:DataGridColumn dataField="{data.note.createdAt}" headerText="CreatedAt"/>
+				<mx:DataGridColumn dataField="content" headerText="Content"/>
+				<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
 			</mx:columns>
 		</mx:DataGrid>
 </mx:Canvas>

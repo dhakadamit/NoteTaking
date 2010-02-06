@@ -4,11 +4,11 @@ package com.notetaking.model.builders
 	
 	public class TagsBuilder
 	{
-		public function buildFromXml(xmlList:XMLList):ArrayCollection
+		public function buildFromXml(xml:XML):ArrayCollection
 		{
 			var tags:ArrayCollection = new ArrayCollection();
 			
-			for each (var tag:XML in xmlList) {
+			for each (var tag:XML in xml.tag) {
 				tags.addItem(new TagBuilder().buildFromXml(tag));
 			}
 			return tags;

@@ -6,7 +6,7 @@ class NotesController < ApplicationController
     
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @notes }
+      format.xml  { render :xml => @notes.to_xml(:include => {:tags => {:only => :name}} ) }
     end
   end
 

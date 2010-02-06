@@ -327,3 +327,187 @@ Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:24:00) [
   [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
   [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
 Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:24:39) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:32:48) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:32:50) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:01) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:03) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:03) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:03) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:18) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 422ms (View: 359, DB: 32) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-06 19:33:19) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:55) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 391ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:56) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:57) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:58) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:58) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:59) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:59) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:59) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:59) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:12:59) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:13:11) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:23:43) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 375ms (View: 343, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:23:44) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/notes.xml]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-07 00:23:46) [GET]
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` [0m
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml]

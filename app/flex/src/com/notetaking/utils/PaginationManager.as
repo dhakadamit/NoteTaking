@@ -1,4 +1,4 @@
-package com.dhakads.utils
+package com.notetaking.utils
 {
 	
 	public class PaginationManager

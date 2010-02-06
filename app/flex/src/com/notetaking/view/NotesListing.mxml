@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init();">
+		
+		<mx:Script>
+			<![CDATA[
+				import com.notetaking.event.GetAllNotesEvent;
+				import com.notetaking.model.NoteTakingApplicationModelLocator;
+				
+				[Bindable]
+				private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+				
+				private function init():void {
+					new GetAllNotesEvent().dispatch();	
+				} 	
+					
+			]]>
+		</mx:Script>
+		
+		<mx:DataGrid dataProvider="{model.notes}">
+			<mx:columns>
+				<mx:DataGridColumn dataField="{data.note.content}" headerText="Content"/>
+				<mx:DataGridColumn dataField="{data.note.createdAt}" headerText="CreatedAt"/>
+			</mx:columns>
+		</mx:DataGrid>
+</mx:Canvas>

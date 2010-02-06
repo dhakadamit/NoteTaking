@@ -1,4 +1,4 @@
-package com.dhakads.utils
+package com.notetaking.utils
 {
 	import mx.collections.ArrayCollection;
 	

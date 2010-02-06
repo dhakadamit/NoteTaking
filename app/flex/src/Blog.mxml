@@ -25,6 +25,7 @@
 	
 		<mx:VBox id="applicationContent" width="1280" paddingTop="0" paddingLeft="20" paddingRight="20" verticalGap="0"
 			horizontalScrollPolicy="off" verticalScrollPolicy="off">
+			<comps:NotesListing id="notesListing" width="100%" height="100%"/>
 		</mx:VBox>
 		
 </mx:Application>

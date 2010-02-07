@@ -2,8 +2,8 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    @notes = Note.all
-    
+    @notes = Note.all.paginate :page => params[:page_number], :per_page => 3
+    @count = Note.count
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @notes.to_xml(:include => {:tags => {:only => :name}} ) }

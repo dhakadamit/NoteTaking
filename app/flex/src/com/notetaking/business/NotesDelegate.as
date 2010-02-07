@@ -3,6 +3,7 @@ package com.notetaking.business
 	
 	import com.notetaking.model.enums.WebServiceUrls;
 	import com.notetaking.utils.ServiceUtils;
+	import com.notetaking.utils.UrlBuilder;
 	
 	import mx.rpc.IResponder;
 	
@@ -15,8 +16,9 @@ package com.notetaking.business
 			this._responder = responder;
 		}
 		
-		public function getAll():void {
-			ServiceUtils.httpGet(WebServiceUrls.GET_ALL_NOTES, this._responder);
+		public function getAll(pageNumber:Number):void {
+			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.GET_ALL_NOTES).withParameter("pageNumber", pageNumber).build();
+			ServiceUtils.httpGet(url, this._responder);
 		}
 
 	}

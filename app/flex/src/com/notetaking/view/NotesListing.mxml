@@ -3,30 +3,58 @@
 		
 		<mx:Script>
 			<![CDATA[
+				import com.notetaking.utils.PaginationManager;
 				import com.notetaking.event.GetAllNotesEvent;
 				import com.notetaking.model.NoteTakingApplicationModelLocator;
 				
 				[Bindable]
 				private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
-				
+				[Bindable]
+				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
+					
 				private function init():void {
-					new GetAllNotesEvent().dispatch();	
+					paginationManager.initialize();
+					paginationManager.nextSetOfResults();	
 				} 	
+				
+				private function getAllNotes(pageNumber:Number, callback:Function):void {
+					new GetAllNotesEvent(pageNumber, callback).dispatch();
+				}
+				
+				private function totalCount():Number {
+					return model.totalCount;
+				}
 					
 			]]>
 		</mx:Script>
 		
-		<mx:DataGrid dataProvider="{model.notes}" width="100%">
-			<mx:columns>
-				<mx:DataGridColumn dataField="content" headerText="Content"/>
-				<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
-				<mx:DataGridColumn headerText="Tags">
-					<mx:itemRenderer>
-						<mx:Component>
-							<mx:Label text="{data.namesOfAllTags}"/>
-						</mx:Component>
-					</mx:itemRenderer>
-				</mx:DataGridColumn>
-			</mx:columns>
-		</mx:DataGrid>
+		<mx:VBox>
+			<mx:Label text="All Notes" fontSize="14" fontWeight="bold"/>
+				
+			<mx:DataGrid dataProvider="{model.notes}">
+				<mx:columns>
+					<mx:DataGridColumn dataField="content" headerText="Content"/>
+					<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
+					<mx:DataGridColumn headerText="Tags">
+						<mx:itemRenderer>
+							<mx:Component>
+								<mx:Label text="{data.namesOfAllTags}"/>
+							</mx:Component>
+						</mx:itemRenderer>
+					</mx:DataGridColumn>
+				</mx:columns>
+			</mx:DataGrid>
+			
+			<mx:HBox verticalAlign="middle" horizontalGap="10">
+				<mx:Label text="{paginationManager.displayString}"/>
+				<mx:LinkButton id="previous">
+					<mx:skin>@Embed(source='../../../../assets/previous-button-previous.png')</mx:skin>					
+				</mx:LinkButton>
+				<mx:LinkButton id="next">
+					<mx:skin>@Embed(source='../../../../assets/previous-button-next.png')</mx:skin>					
+				</mx:LinkButton>
+			</mx:HBox>
+
+			
+		</mx:VBox>
 </mx:Canvas>

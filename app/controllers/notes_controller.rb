@@ -6,7 +6,7 @@ class NotesController < ApplicationController
     @count = Note.count
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @notes.to_xml(:include => {:tags => {:only => :name}} ) }
+      format.xml  { render :json => @notes.to_xml(:include => {:tags => {:only => :name}} ) }
     end
   end
 

@@ -23,7 +23,7 @@ package com.notetaking.utils
             service.contentType = sendXML ? "application/xml" : "application/x-www-form-urlencoded";
             service.resultFormat = "e4x";
             service.method = "POST";
-            service.request = request;
+            service.request = JSONrequest;
             service.useProxy = false;
             var call:AsyncToken = service.send();
             call.addResponder(responder);

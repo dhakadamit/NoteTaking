@@ -11,6 +11,15 @@ package com.notetaking.model.builders
 			note.tags = new TagsBuilder().buildFromXml(xml.tags[0]);
 			return note;
 		}
+		
+		public function convertToObject(note:Note):Object {
+			var object:Object = new Object();
+			object.content = note.content;
+			
+			object.tag_attributes = new TagsBuilder().convertToObject(note.tags);
+			 	
+			return object;
+		}
 
 	}
 }

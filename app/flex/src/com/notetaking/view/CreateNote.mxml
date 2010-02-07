@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" creationComplete="init();">
+
+	<mx:Script>
+		<![CDATA[
+			import com.notetaking.model.Tag;
+			import com.notetaking.model.Note;
+			import com.notetaking.event.CreateNoteEvent;
+			import mx.collections.ArrayCollection;
+			
+			private function init():void {
+				submit.addEventListener(MouseEvent.CLICK, createNewNote);				
+			}
+			
+			private function createNewNote(event:Event):void {
+				var note:Note = new Note();
+				note.content = content.text;
+				note.tags = tagList();
+				new CreateNoteEvent(note).dispatch();
+			}
+			
+			private function tagList():ArrayCollection {
+				var names:ArrayCollection = new ArrayCollection(tags.text.split(" "));
+				var tags:ArrayCollection = new ArrayCollection();
+				for each(var name:String in names) {
+					var tag:Tag = new Tag();
+					tag.name = name;
+					tags.addItem(new Tag());
+				}	
+				return tags;
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">
+		<mx:RichTextEditor id="content" width="100%" height="100%"/>
+		
+		<mx:HBox width="100%">
+			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>
+			<mx:TextInput id="tags" width="70%"/>
+		</mx:HBox>
+		<mx:Button id="submit" label="Create"/>	
+	</mx:VBox>
+	
+</mx:Canvas>

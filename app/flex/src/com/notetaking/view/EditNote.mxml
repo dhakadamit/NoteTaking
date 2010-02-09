@@ -43,7 +43,7 @@
 			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>
 			<mx:TextInput id="tags" text="{model.selectedNote.namesOfAllTags}" width="70%"/>
 		</mx:HBox>
-		<mx:Button id="submit" label="Create"/>	
+		<mx:Button id="submit" label="Update"/>	
 	</mx:VBox>
 	
 </mx:Canvas>

@@ -17,6 +17,7 @@
 			
 			private function initApp():void {
 				applicationContent.height = Application.application.height;
+				
 			}
 				
 		]]>
@@ -26,7 +27,7 @@
 		<mx:VBox id="applicationContent" width="1280" paddingTop="0" paddingLeft="20" paddingRight="20" verticalGap="0"
 			horizontalScrollPolicy="off" verticalScrollPolicy="off">
 			
-			<mx:Accordion width="100%" height="100%" paddingBottom="50" paddingLeft="50" paddingRight="50" paddingTop="50" verticalGap="50">
+			<mx:Accordion id="mainAccordian" width="100%" height="100%" paddingBottom="50" paddingLeft="50" paddingRight="50" paddingTop="50" verticalGap="50">
 				<comps:NotesListing label="List All Notes" id="notesListing" width="100%" height="100%"/>
 				<comps:CreateNote label="Create a new note" id="createNote" width="100%" height="100%"/>
 				<comps:EditNote label="Edit note" id="editNote" width="100%" height="100%"/>	

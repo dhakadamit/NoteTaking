@@ -3,6 +3,11 @@
 		
 		<mx:Script>
 			<![CDATA[
+				import mx.core.Application;
+				import com.notetaking.model.Note;
+				import mx.events.ListEvent;
+				import mx.controls.Alert;
+				import mx.events.ItemClickEvent;
 				import com.notetaking.utils.PaginationManager;
 				import com.notetaking.event.GetAllNotesEvent;
 				import com.notetaking.model.NoteTakingApplicationModelLocator;
@@ -25,6 +30,11 @@
 				private function totalCount():Number {
 					return model.totalCount;
 				}
+				
+				private function showItem(event:ListEvent):void {
+					model.selectedNote = Note (event.itemRenderer.data);
+					Application.application.mainAccordian.selectedIndex = 3;
+				}
 					
 			]]>
 		</mx:Script>
@@ -32,7 +42,7 @@
 		<mx:VBox width="100%">
 			<mx:Label text="All Notes" fontSize="14" fontWeight="bold"/>
 				
-			<mx:DataGrid dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%">
+			<mx:DataGrid dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" itemClick="showItem(event);">
 				<mx:columns>
 					<mx:DataGridColumn dataField="content" headerText="Content"/>
 					<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>

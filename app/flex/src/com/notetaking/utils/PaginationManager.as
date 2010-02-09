@@ -3,7 +3,7 @@ package com.notetaking.utils
 	
 	public class PaginationManager
 	{
-		private static const TOTAL_RESULTS_PER_PAGE:Number = 3;
+		private var _totalResultsPerPage:Number = 15;
 		private var _totalCount:Number = 0;
 		private var _currentPage:Number = 0;
 		private var _displayingItemsFrom:Number = 0;
@@ -55,18 +55,22 @@ package com.notetaking.utils
 				_displayingItemsTo = _totalCount;				
 			} 
 			else {
-				_displayingItemsTo = _currentPage * TOTAL_RESULTS_PER_PAGE;
-				_displayingItemsFrom = _displayingItemsTo - TOTAL_RESULTS_PER_PAGE;
+				_displayingItemsTo = _currentPage * _totalResultsPerPage;
+				_displayingItemsFrom = _displayingItemsTo - _totalResultsPerPage;
 			}	
 			displayString = _displayingItemsFrom + '-' + _displayingItemsTo + ' of ' + _totalCount;
 		}
 		
 		private function calculateTotalNumberOfPages():Number {
-			var count:int = _totalCount / TOTAL_RESULTS_PER_PAGE;
-			if(_totalCount % TOTAL_RESULTS_PER_PAGE != 0) {
+			var count:int = _totalCount / _totalResultsPerPage;
+			if(_totalCount % _totalResultsPerPage != 0) {
 				count++;
 			}
 			return count;
+		}
+		
+		public function set totalResultsPerPage(value:Number):void {
+			this._totalResultsPerPage = value;
 		}
 		
 	}

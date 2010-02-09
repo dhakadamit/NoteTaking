@@ -14,7 +14,7 @@
 					
 				private function init():void {
 					paginationManager.initialize();
-					paginationManager.nextSetOfResults();	
+					paginationManager.nextSetOfResults();
 				} 	
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {

@@ -16,13 +16,14 @@ package com.notetaking.model.builders
 			return tags;
 		}
 		
-		public function convertToObject(tags:ArrayCollection):Array {
-			var tagsObject:Array = new Array();
+		public function convertToXml(tags:ArrayCollection):XMLList {
+			var xml:XMLList = new XMLList(<tags_attributes type="array"></tags_attributes>);
+			
 			var tagBuilder:TagBuilder = new TagBuilder();
 			for each (var tag:Tag in tags) {
-				tagsObject.push(tagBuilder.convertToObject(tag));
+				xml.appendChild(tagBuilder.convertToXml(tag));
 			}
-			return tagsObject;
+			return xml;
 		}
 
 	}

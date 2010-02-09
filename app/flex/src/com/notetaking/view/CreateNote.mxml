@@ -9,7 +9,7 @@
 			import mx.collections.ArrayCollection;
 			
 			private function init():void {
-				submit.addEventListener(MouseEvent.CLICK, createNewNote);				
+				submit.addEventListener(MouseEvent.CLICK, createNewNote);
 			}
 			
 			private function createNewNote(event:Event):void {
@@ -25,7 +25,7 @@
 				for each(var name:String in names) {
 					var tag:Tag = new Tag();
 					tag.name = name;
-					tags.addItem(new Tag());
+					tags.addItem(tag);
 				}	
 				return tags;
 			}

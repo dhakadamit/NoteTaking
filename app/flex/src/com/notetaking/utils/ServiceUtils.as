@@ -16,34 +16,34 @@ package com.notetaking.utils
             call.addResponder(responder);
         }
         
-        public static function httpPost(url:String,  request:Object, responder:IResponder = null, sendXML:Boolean = false):void
+        public static function httpPost(url:String,  request:Object, responder:IResponder = null, sendXML:Boolean = true):void
         {
-            var service:HTTPService = new HTTPService();
+        	var service:HTTPService = new HTTPService();
             service.url = url;
             service.contentType = sendXML ? "application/xml" : "application/x-www-form-urlencoded";
             service.resultFormat = "e4x";
             service.method = "POST";
-            service.request = JSONrequest;
-            service.useProxy = false;
-            var call:AsyncToken = service.send();
-            call.addResponder(responder);
-        }
-        
-        public static function httpPut(url:String,  request:Object, responder:IResponder = null, sendXML:Boolean = false):void
-        {
-            var service:HTTPService = new HTTPService();
-            service.url = url;
-            service.contentType = sendXML ? "application/xml" : "application/x-www-form-urlencoded";
-            service.resultFormat = "e4x";
-            service.method = "POST";
-            request["_method"] = "PUT";
             service.request = request;
             service.useProxy = false;
             var call:AsyncToken = service.send();
             call.addResponder(responder);
         }
         
-        public static function httpDestroy(url:String,  responder:IResponder = null, request:Object = null, sendXML:Boolean = false):void
+        public static function httpPut(url:String,  request:Object, responder:IResponder = null, sendXML:Boolean = true):void
+        {
+            var service:HTTPService = new HTTPService();
+            service.url = url;
+            service.contentType = sendXML ? "application/xml" : "application/x-www-form-urlencoded";
+            service.resultFormat = "e4x";
+            service.method = "POST";
+            service.request = request;
+            service.useProxy = false;
+            service.headers = {X_HTTP_METHOD_OVERRIDE: "PUT"};
+            var call:AsyncToken = service.send();
+            call.addResponder(responder);
+        }
+        
+        public static function httpDestroy(url:String,  responder:IResponder = null, request:Object = null, sendXML:Boolean = true):void
         {
             var service:HTTPService = new HTTPService();
             service.url = url;

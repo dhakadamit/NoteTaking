@@ -12,13 +12,11 @@ package com.notetaking.model.builders
 			return note;
 		}
 		
-		public function convertToObject(note:Note):Object {
-			var object:Object = new Object();
-			object.content = note.content;
-			
-			object.tag_attributes = new TagsBuilder().convertToObject(note.tags);
+		public function convertToXml(note:Note):XML {
+			var tagsAttributes:XMLList = new TagsBuilder().convertToXml(note.tags);
+			var xml:XMLList = new XMLList(<note><content>{note.content}</content></note>);
 			 	
-			return object;
+			return xml.appendChild(tagsAttributes);
 		}
 
 	}

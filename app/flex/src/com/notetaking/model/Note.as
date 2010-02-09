@@ -5,10 +5,19 @@ package com.notetaking.model
 	public class Note
 	{
 		
+		private var _id:String;
 		private var _content:String;
 		private var _createdAt:String;
 		private var _tags:ArrayCollection;
 		private var _namesOfAllTags:String;
+
+		public function get id():String {
+			return _id;
+		}
+
+		public function set id(value:String):void {
+			_id = value;
+		}
 
 		public function get createdAt():String {
 			return _createdAt;

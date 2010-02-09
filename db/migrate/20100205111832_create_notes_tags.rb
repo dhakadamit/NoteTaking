@@ -1,6 +1,6 @@
 class CreateNotesTags < ActiveRecord::Migration
   def self.up
-    create_table :n.save, :id => false do |t|
+    create_table :notes_tags, :id => false do |t|
       t.integer :note_id, :null => false
       t.integer :tag_id, :null => false
     end

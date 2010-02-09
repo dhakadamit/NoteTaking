@@ -12,10 +12,12 @@ package com.notetaking.model.builders
 			return tag;
 		}
 		
-		public function convertToObject(tag:Tag):Object {
-			var object:Object = new Object();
-			object.name = tag.name;
-			return object;
+		public function convertToXml(tag:Tag):XMLList {
+			var xml:XMLList = new XMLList(
+			 	<tag>
+			 		<name>{tag.name}</name>
+			 	</tag>); 	
+			return xml;
 		}
 
 	}

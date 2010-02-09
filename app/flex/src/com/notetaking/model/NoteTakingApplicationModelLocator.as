@@ -11,6 +11,7 @@ package com.notetaking.model
 		
 		public var notes:ArrayCollection = new ArrayCollection();
 		public var totalCount:Number;
+		public var selectedNote:Note;
 		
 		public static function getInstance():NoteTakingApplicationModelLocator{
             if (modelLocator == null) {

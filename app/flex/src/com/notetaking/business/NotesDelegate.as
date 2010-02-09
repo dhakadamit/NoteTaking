@@ -27,6 +27,12 @@ package com.notetaking.business
 			var xml:XML = new NoteBuilder().convertToXml(note);
 			ServiceUtils.httpPost(WebServiceUrls.CREATE_NOTE, xml , this._responder, true); 
 		}
+		
+		public function updateNote(note:Note):void {
+			var xml:XML = new NoteBuilder().convertToXml(note);
+			var url:String = WebServiceUrls.UPDATE_NOTE.replace("id", note.id);
+			ServiceUtils.httpPut(url, xml , this._responder, true); 
+		}
 
 	}
 }

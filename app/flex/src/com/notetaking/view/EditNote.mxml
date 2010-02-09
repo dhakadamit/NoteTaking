@@ -3,20 +3,24 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.event.UpdateNoteEvent;
+			import com.notetaking.model.NoteTakingApplicationModelLocator;
 			import com.notetaking.model.Tag;
 			import com.notetaking.model.Note;
-			import com.notetaking.event.CreateNoteEvent;
 			import mx.collections.ArrayCollection;
 			
+			[Bindable]
+			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+			
 			private function init():void {
-				submit.addEventListener(MouseEvent.CLICK, createNewNote);
+				submit.addEventListener(MouseEvent.CLICK, updateNewNote);
 			}
 			
-			private function createNewNote(event:Event):void {
-				var note:Note = new Note();
+			private function updateNewNote(event:Event):void {
+				var note:Note = model.selectedNote;
 				note.content = content.htmlText;
-				note.tags = tagList();
-				new CreateNoteEvent(note).dispatch();
+//				note.tags = tagList();
+				new UpdateNoteEvent(note).dispatch();
 			}
 			
 			private function tagList():ArrayCollection {
@@ -33,11 +37,11 @@
 	</mx:Script>
 	
 	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">
-		<mx:RichTextEditor id="content" width="100%" height="100%"/>
+		<mx:RichTextEditor id="content" htmlText="{model.selectedNote.content}" width="100%" height="100%"/>
 		
 		<mx:HBox width="100%">
 			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>
-			<mx:TextInput id="tags" width="70%"/>
+			<mx:TextInput id="tags" text="{model.selectedNote.namesOfAllTags}" width="70%"/>
 		</mx:HBox>
 		<mx:Button id="submit" label="Create"/>	
 	</mx:VBox>

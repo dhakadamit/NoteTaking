@@ -42,7 +42,7 @@
 		<mx:VBox width="100%">
 			<mx:Label text="All Notes" fontSize="14" fontWeight="bold"/>
 				
-			<mx:DataGrid dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" itemClick="showItem(event);">
+			<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" itemClick="showItem(event);">
 				<mx:columns>
 					<mx:DataGridColumn dataField="content" headerText="Content"/>
 					<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>

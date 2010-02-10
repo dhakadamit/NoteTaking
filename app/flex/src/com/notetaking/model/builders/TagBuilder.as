@@ -4,11 +4,13 @@ package com.notetaking.model.builders
 	
 	public class TagBuilder
 	{
+		private var _name:String;
+		
 		public function buildFromXml(xml:XML):Tag
 		{
 			var tag:Tag = new Tag();
 			tag.name = xml.name;
-//			tag.tags = new TagsBuilder().buildFromXml(xml.tags);
+			tag.count = xml.count;
 			return tag;
 		}
 		
@@ -18,6 +20,17 @@ package com.notetaking.model.builders
 			 		<name>{tag.name}</name>
 			 	</tag>); 	
 			return xml;
+		}
+		
+		public function withName(value:String):TagBuilder {
+			this._name = value;
+			return this;
+		}
+		
+		public function build():Tag {
+			var tag:Tag = new Tag();
+			tag.name = _name;
+			return tag;
 		}
 
 	}

@@ -6,12 +6,13 @@ package com.notetaking.model.builders
 	
 	public class TagsBuilder
 	{
-		public function buildFromXml(xml:XML):ArrayCollection
+		public function buildFromList(listOfNames:String):ArrayCollection
 		{
+			var names:Array = listOfNames.split(", ");
 			var tags:ArrayCollection = new ArrayCollection();
 			
-			for each (var tag:XML in xml.tag) {
-				tags.addItem(new TagBuilder().buildFromXml(tag));
+			for each (var name:String in names) {
+				tags.addItem(new TagBuilder().withName(name).build());
 			}
 			return tags;
 		}

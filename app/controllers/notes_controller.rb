@@ -2,8 +2,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    p params
-    @notes = Note.all(:order => "created_at DESC").paginate :page => params[:page_number], :per_page => 15
+    @notes = Note.all(:conditions => "plain_content LIKE '#{params[:content_query]}%' AND title LIKE '#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 15
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @notes.to_xml(:methods => [:tag_list])}
@@ -11,7 +10,7 @@ class NotesController < ApplicationController
   end
 
   def total_count
-    @count = Note.count
+    @count = Note.count(:conditions => "plain_content LIKE '#{params[:content_query]}%' AND title LIKE '#{params[:title_query]}%'")
 
     xm = Builder::XmlMarkup.new
     xm.total_count {@count}

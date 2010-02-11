@@ -8,7 +8,8 @@ package com.notetaking.model.builders
 			var note:Note = new Note();
 			note.id = xml.id;
 			note.title = xml.title;
-			note.content = xml.content;			
+			note.content = xml.content;
+			note.plainContent = xml.plain_content;			
 			note.createdAt = xml.created_at;
 			note.tags = new TagsBuilder().buildFromList(xml.tag_list);
 			return note;
@@ -19,6 +20,7 @@ package com.notetaking.model.builders
 				<note>
 					<title>{note.title}</title>
 					<content>{note.content}</content>
+					<plain_content>{note.plainContent}</plain_content>
 					<tag_list>{note.namesOfAllTags}</tag_list>
 				</note>;
 			 	

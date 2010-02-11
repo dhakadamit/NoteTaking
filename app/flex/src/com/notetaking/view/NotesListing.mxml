@@ -18,22 +18,35 @@
 				private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 				[Bindable]
 				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
+				private var contentQuery:String = "";
+				private var titleQuery:String = "";					
 					
 				private function init():void {
+					initializePaginationManager();
+					attachEvents();
+				} 	
+				
+				private function initializePaginationManager():void {
 					paginationManager.totalResultsPerPage = 15;
 					paginationManager.initialize();
 					paginationManager.nextSetOfResults();
-					attachEvents();
-				} 	
+				}
+				
+				private function performSearch(event:Event):void {
+					contentQuery = contentQueryBox.text;
+					titleQuery = titleQueryBox.text;
+					initializePaginationManager();
+				}
 				
 				private function attachEvents():void {
 					next.addEventListener(MouseEvent.CLICK, paginationManager.nextSetOfResults);
 					previous.addEventListener(MouseEvent.CLICK, paginationManager.previousSetOfResults);
+					submitQuery.addEventListener(MouseEvent.CLICK, performSearch);	
 				}
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
-					new GetAllNotesEvent(pageNumber).dispatch();
-					new NotesTotalCountEvent(callback).dispatch();
+					new GetAllNotesEvent(pageNumber, contentQuery, titleQuery).dispatch();
+					new NotesTotalCountEvent(contentQuery, titleQuery, callback).dispatch();
 				}
 				
 				private function totalCount():Number {
@@ -48,12 +61,29 @@
 			]]>
 		</mx:Script>
 		
-		<mx:VBox width="100%">
+		<mx:VBox width="100%" verticalGap="10">
 			<mx:Label text="All Notes" fontSize="14" fontWeight="bold"/>
 				
+			<mx:HBox width="100%">
+				<mx:VBox width="70%">
+					<mx:HBox width="100%">
+						<mx:Label text="Content" fontWeight="bold" fontSize="12"/>
+						<mx:TextInput id="contentQueryBox" width="70%"/>
+					</mx:HBox>
+					<mx:HBox width="100%">
+						<mx:Label text="Title" fontWeight="bold" fontSize="12"/>
+						<mx:TextInput id="titleQueryBox" width="70%"/>	
+					</mx:HBox>					
+				</mx:VBox>
+				
+				<mx:Button label="Search" id="submitQuery"/>
+			</mx:HBox>
+		
+			
 			<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" itemClick="showItem(event);">
 				<mx:columns>
 					<mx:DataGridColumn dataField="title" headerText="Title"/>
+					<mx:DataGridColumn dataField="plainContent" headerText="CreatedAt" wordWrap="true"/>
 					<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
 					<mx:DataGridColumn headerText="Tags">
 						<mx:itemRenderer>

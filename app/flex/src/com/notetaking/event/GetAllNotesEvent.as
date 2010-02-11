@@ -6,13 +6,25 @@ package com.notetaking.event
 	{
 		public static const GET_ALL_NOTES:String = "getAllNotesEvent";
 		private var _pageNumber:Number;
+		private var _contentQuery:String;
+		private var _titleQuery:String;
 
-		public function GetAllNotesEvent(pageNumber:Number)
+		public function GetAllNotesEvent(pageNumber:Number, contentQuery:String, titleQuery:String)
 		{
 			super(GET_ALL_NOTES);
 			this._pageNumber = pageNumber;
+			this._contentQuery = contentQuery;
+			this._titleQuery = titleQuery;
+		}
+
+		public function get titleQuery():String {
+			return _titleQuery;
 		}
 		
+		public function get contentQuery():String {
+			return _contentQuery;
+		}
+
 		public function get pageNumber():Number {
 			return _pageNumber;
 		}	

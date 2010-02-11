@@ -20,6 +20,7 @@
 				var note:Note = model.selectedNote;
 				note.title = title.text;
 				note.content = content.htmlText;
+				note.plainContent = content.text;
 				note.tags = tagList();
 				new UpdateNoteEvent(note).dispatch();
 			}

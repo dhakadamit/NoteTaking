@@ -8,6 +8,7 @@ package com.notetaking.model
 		
 		private var _id:String;
 		private var _content:String;
+		private var _title:String;
 		private var _createdAt:String;
 		private var _tags:ArrayCollection;
 		private var _namesOfAllTags:String;
@@ -18,6 +19,14 @@ package com.notetaking.model
 
 		public function set id(value:String):void {
 			_id = value;
+		}
+
+		public function get title():String {
+			return _title;
+		}
+
+		public function set title(value:String):void {
+			_title = value;
 		}
 
 		public function get createdAt():String {

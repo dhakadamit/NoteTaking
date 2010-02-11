@@ -14,6 +14,7 @@
 			
 			private function createNewNote(event:Event):void {
 				var note:Note = new Note();
+				note.title = title.text;
 				note.content = content.htmlText;
 				note.tags = tagList();
 				new CreateNoteEvent(note).dispatch();
@@ -33,7 +34,12 @@
 	</mx:Script>
 	
 	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">
-		<mx:RichTextEditor id="content" width="100%" height="100%"/>
+		<mx:HBox width="100%">
+			<mx:Label text="Title" fontWeight="bold" fontSize="12"/>
+			<mx:TextInput id="title" width="70%"/>
+		</mx:HBox>
+		
+		<mx:RichTextEditor id="content" width="100%" height="100%"/>		
 		
 		<mx:HBox width="100%">
 			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>

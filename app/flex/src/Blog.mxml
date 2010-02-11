@@ -16,8 +16,7 @@
 			import mx.controls.Alert;
 			
 			private function initApp():void {
-				applicationContent.height = Application.application.height;
-				
+				applicationContent.height = Application.application.height;				
 			}
 				
 		]]>

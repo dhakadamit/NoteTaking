@@ -3,6 +3,7 @@
 		
 		<mx:Script>
 			<![CDATA[
+				import com.notetaking.model.enums.Tabs;
 				import com.notetaking.event.NotesTotalCountEvent;
 				import mx.core.Application;
 				import com.notetaking.model.Note;
@@ -41,7 +42,7 @@
 				
 				private function showItem(event:ListEvent):void {
 					model.selectedNote = Note (event.itemRenderer.data);
-					Application.application.mainAccordian.selectedIndex = 3;
+					Application.application.mainAccordian.selectedIndex = Tabs.EDIT;
 				}
 					
 			]]>
@@ -52,7 +53,7 @@
 				
 			<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" itemClick="showItem(event);">
 				<mx:columns>
-					<mx:DataGridColumn dataField="content" headerText="Content"/>
+					<mx:DataGridColumn dataField="title" headerText="Title"/>
 					<mx:DataGridColumn dataField="createdAt" headerText="CreatedAt"/>
 					<mx:DataGridColumn headerText="Tags">
 						<mx:itemRenderer>

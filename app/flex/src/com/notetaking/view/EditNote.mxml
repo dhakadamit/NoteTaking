@@ -18,6 +18,7 @@
 			
 			private function updateNewNote(event:Event):void {
 				var note:Note = model.selectedNote;
+				note.title = title.text;
 				note.content = content.htmlText;
 				note.tags = tagList();
 				new UpdateNoteEvent(note).dispatch();
@@ -37,6 +38,11 @@
 	</mx:Script>
 	
 	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">
+		<mx:HBox width="100%">
+			<mx:Label text="Title" fontWeight="bold" fontSize="12"/>
+			<mx:TextInput id="title" text="{model.selectedNote.title}" width="70%"/>
+		</mx:HBox>
+		
 		<mx:RichTextEditor id="content" htmlText="{model.selectedNote.content}" width="100%" height="100%"/>
 		
 		<mx:HBox width="100%">

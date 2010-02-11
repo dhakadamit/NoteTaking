@@ -19,7 +19,6 @@ package com.notetaking.command
 		
 		public function result(data:Object):void
 		{
-			Alert.show("success");
 		}
 		
 		public function fault(info:Object):void

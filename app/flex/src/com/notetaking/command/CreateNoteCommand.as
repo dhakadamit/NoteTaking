@@ -4,12 +4,18 @@ package com.notetaking.command
 	import com.adobe.cairngorm.control.CairngormEvent;
 	import com.notetaking.business.NotesDelegate;
 	import com.notetaking.event.CreateNoteEvent;
+	import com.notetaking.model.NoteTakingApplicationModelLocator;
+	import com.notetaking.model.builders.NoteBuilder;
+	import com.notetaking.model.enums.Tabs;
 	
-	import mx.controls.Alert;
+	import mx.core.Application;
 	import mx.rpc.IResponder;
 
 	public class CreateNoteCommand implements ICommand, IResponder
 	{
+		[Bindable]
+		private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var createNoteEvent:CreateNoteEvent = CreateNoteEvent (event);
@@ -19,7 +25,8 @@ package com.notetaking.command
 		
 		public function result(data:Object):void
 		{
-			Alert.show("success");
+			model.selectedNote = new NoteBuilder().buildFromXml(data.result);	
+			Application.application.mainAccordian.selectedIndex = Tabs.EDIT;
 		}
 		
 		public function fault(info:Object):void

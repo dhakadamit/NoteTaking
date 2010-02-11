@@ -3,7 +3,7 @@ class NotesController < ApplicationController
   # GET /notes.xml
   def index
     p params
-    @notes = Note.all.paginate :page => params[:page_number], :per_page => 15
+    @notes = Note.all(:order => "created_at DESC").paginate :page => params[:page_number], :per_page => 15
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @notes.to_xml(:methods => [:tag_list])}
@@ -55,11 +55,8 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        flash[:notice] = 'Note was successfully created.'
-        format.html { redirect_to(@note) }
-        format.xml  { render :xml => @note, :status => :created, :location => @note }
+        format.xml  { render :xml => @note, :status => 200}
       else
-        format.html { render :action => "new" }
         format.xml  { render :xml => @note.errors, :status => :unprocessable_entity }
       end
     end

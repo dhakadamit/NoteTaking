@@ -19,7 +19,7 @@ package com.notetaking.business
 		}
 		
 		public function getAll(pageNumber:Number):void {
-			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.GET_ALL_NOTES).withParameter("pageNumber", pageNumber).build();
+			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.GET_ALL_NOTES).withParameter("page_number", pageNumber).build();
 			ServiceUtils.httpGet(url, this._responder);
 		}
 		

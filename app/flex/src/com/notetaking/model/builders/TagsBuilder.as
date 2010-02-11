@@ -16,16 +16,6 @@ package com.notetaking.model.builders
 			}
 			return tags;
 		}
-		
-		public function convertToXml(tags:ArrayCollection):XMLList {
-			var xml:XMLList = new XMLList(<tags_attributes type="array"></tags_attributes>);
-			
-			var tagBuilder:TagBuilder = new TagBuilder();
-			for each (var tag:Tag in tags) {
-				xml.appendChild(tagBuilder.convertToXml(tag));
-			}
-			return xml;
-		}
 
 	}
 }

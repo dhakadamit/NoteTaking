@@ -2,6 +2,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
+    p params
     @notes = Note.all.paginate :page => params[:page_number], :per_page => 15
     respond_to do |format|
       format.html # index.html.erb
@@ -12,7 +13,6 @@ class NotesController < ApplicationController
   def total_count
     @count = Note.count
 
-    p @count
     xm = Builder::XmlMarkup.new
     xm.total_count {@count}
 

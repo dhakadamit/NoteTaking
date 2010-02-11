@@ -22,7 +22,13 @@
 					paginationManager.totalResultsPerPage = 15;
 					paginationManager.initialize();
 					paginationManager.nextSetOfResults();
+					attachEvents();
 				} 	
+				
+				private function attachEvents():void {
+					next.addEventListener(MouseEvent.CLICK, paginationManager.nextSetOfResults);
+					previous.addEventListener(MouseEvent.CLICK, paginationManager.previousSetOfResults);
+				}
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
 					new GetAllNotesEvent(pageNumber).dispatch();

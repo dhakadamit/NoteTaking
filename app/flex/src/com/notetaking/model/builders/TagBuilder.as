@@ -14,14 +14,6 @@ package com.notetaking.model.builders
 			return tag;
 		}
 		
-		public function convertToXml(tag:Tag):XMLList {
-			var xml:XMLList = new XMLList(
-			 	<tag>
-			 		<name>{tag.name}</name>
-			 	</tag>); 	
-			return xml;
-		}
-		
 		public function withName(value:String):TagBuilder {
 			this._name = value;
 			return this;

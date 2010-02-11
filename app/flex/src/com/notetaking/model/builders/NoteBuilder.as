@@ -14,10 +14,13 @@ package com.notetaking.model.builders
 		}
 		
 		public function convertToXml(note:Note):XML {
-			var tagsAttributes:XMLList = new TagsBuilder().convertToXml(note.tags);
-			var xml:XMLList = new XMLList(<note><content>{note.content}</content></note>);
+			var xml:XML = 
+				<note>
+					<content>{note.content}</content>
+					<tag_list>{note.namesOfAllTags}</tag_list>
+				</note>;
 			 	
-			return xml.appendChild(tagsAttributes);
+			return xml;
 		}
 
 	}

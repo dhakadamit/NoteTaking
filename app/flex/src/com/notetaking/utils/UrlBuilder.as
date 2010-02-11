@@ -24,7 +24,7 @@ package com.notetaking.utils
 		public function build():String {
 			var url:String = this._baseUrl;
 			
-			if(this._parameters.length > 1) {
+			if(this._parameters.length >= 1) {
 				url = url + "?" + this._parameters.getItemAt(0).toString();
 			}
 			

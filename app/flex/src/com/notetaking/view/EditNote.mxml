@@ -19,7 +19,7 @@
 			private function updateNewNote(event:Event):void {
 				var note:Note = model.selectedNote;
 				note.content = content.htmlText;
-//				note.tags = tagList();
+				note.tags = tagList();
 				new UpdateNoteEvent(note).dispatch();
 			}
 			

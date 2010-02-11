@@ -13,7 +13,6 @@ package com.notetaking.command
 	{
 		[Bindable]
 		private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
-		private var _callback:Function;
 		
 		public function GetAllNotesCommand()
 		{
@@ -22,8 +21,6 @@ package com.notetaking.command
 		public function execute(event:CairngormEvent):void
 		{
 			var getAllNotesEvent:GetAllNotesEvent = GetAllNotesEvent (event);
-			this._callback = getAllNotesEvent.callback;
-			
 			var notesDelegate:NotesDelegate = new NotesDelegate(this);
 			notesDelegate.getAll(getAllNotesEvent.pageNumber);
 		}
@@ -31,11 +28,6 @@ package com.notetaking.command
 		public function result(data:Object):void
 		{
 			model.notes = new NotesBuilder().buildFromXml(data.result);
-//			model.totalCount = data.result.total_count;
-
-			if(_callback != null) {
-				this._callback();
-			} 
 		}
 		
 		public function fault(info:Object):void

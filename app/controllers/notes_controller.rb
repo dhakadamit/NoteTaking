@@ -9,6 +9,18 @@ class NotesController < ApplicationController
     end
   end
 
+  def total_count
+    @count = Note.count
+
+    p @count
+    xm = Builder::XmlMarkup.new
+    xm.total_count {@count}
+
+    respond_to do |format|
+      format.xml  { render :xml => {:total_count => @count}.to_xml  }
+    end
+  end
+
   # GET /notes/1
   # GET /notes/1.xml
   def show

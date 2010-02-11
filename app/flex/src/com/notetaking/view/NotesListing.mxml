@@ -3,6 +3,7 @@
 		
 		<mx:Script>
 			<![CDATA[
+				import com.notetaking.event.NotesTotalCountEvent;
 				import mx.core.Application;
 				import com.notetaking.model.Note;
 				import mx.events.ListEvent;
@@ -24,11 +25,12 @@
 				} 	
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
-					new GetAllNotesEvent(pageNumber, callback).dispatch();
+					new GetAllNotesEvent(pageNumber).dispatch();
+					new NotesTotalCountEvent(callback).dispatch();
 				}
 				
 				private function totalCount():Number {
-					return model.totalCount;
+					return model.notesTotalCount;
 				}
 				
 				private function showItem(event:ListEvent):void {

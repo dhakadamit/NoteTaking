@@ -33,6 +33,10 @@ package com.notetaking.business
 			var url:String = WebServiceUrls.UPDATE_NOTE.replace("id", note.id);
 			ServiceUtils.httpPut(url, xml , this._responder, true); 
 		}
+		
+		public function totalCount():void {
+			ServiceUtils.httpGet(WebServiceUrls.TOTAL_COUNT, this._responder);
+		}
 
 	}
 }

@@ -22,7 +22,7 @@ package com.notetaking.command
 		{
 			var getAllNotesEvent:GetAllNotesEvent = GetAllNotesEvent (event);
 			var notesDelegate:NotesDelegate = new NotesDelegate(this);
-			notesDelegate.getAll(getAllNotesEvent.pageNumber, getAllNotesEvent.contentQuery, getAllNotesEvent.titleQuery);
+			notesDelegate.getAll(getAllNotesEvent.pageNumber, getAllNotesEvent.contentQuery, getAllNotesEvent.titleQuery, getAllNotesEvent.tagQuery);
 		}
 		
 		public function result(data:Object):void

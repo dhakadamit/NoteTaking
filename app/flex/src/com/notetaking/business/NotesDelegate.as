@@ -18,11 +18,12 @@ package com.notetaking.business
 			this._responder = responder;
 		}
 		
-		public function getAll(pageNumber:Number, contentQuery:String = "", titleQuery:String = ""):void {
+		public function getAll(pageNumber:Number, contentQuery:String = "", titleQuery:String = "", tagQuery:String = ""):void {
 			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.GET_ALL_NOTES)
 							.withParameter("page_number", pageNumber)
 							.withParameter("content_query", contentQuery)
 							.withParameter("title_query", titleQuery)
+							.withParameter("tags", tagQuery)
 							.build();
 			ServiceUtils.httpGet(url, this._responder);
 		}
@@ -38,10 +39,11 @@ package com.notetaking.business
 			ServiceUtils.httpPut(url, xml , this._responder, true); 
 		}
 		
-		public function totalCount(contentQuery:String, titleQuery:String):void {
+		public function totalCount(contentQuery:String = "", titleQuery:String = "", tagQuery:String = ""):void {
 			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.TOTAL_COUNT)
 							.withParameter("content_query", contentQuery)
 							.withParameter("title_query", titleQuery)
+							.withParameter("tags", tagQuery)
 							.build();
 			ServiceUtils.httpGet(url, this._responder);
 		}

@@ -19,7 +19,7 @@ package com.notetaking.command
 			var notesTotalCountEvent:NotesTotalCountEvent = NotesTotalCountEvent (event);
 			this._callback = notesTotalCountEvent.callback;
 			var notesDelegate:NotesDelegate = new NotesDelegate(this);
-			notesDelegate.totalCount(notesTotalCountEvent.contentQuery, notesTotalCountEvent.titleQuery);
+			notesDelegate.totalCount(notesTotalCountEvent.contentQuery, notesTotalCountEvent.titleQuery, notesTotalCountEvent.tagQuery);
 		}
 		
 		public function result(data:Object):void

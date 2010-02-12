@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => 'notes'
+
   map.total_count '/notes/total_count.:format', :controller => 'notes', :action => 'total_count', :conditions => {:method => :get}
   
   map.resources :notes

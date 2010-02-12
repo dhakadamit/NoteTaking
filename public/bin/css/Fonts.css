@@ -1,0 +1,6 @@
+/* CSS file */
+@font-face {
+   src:url("../../assets/fonts/TEMPSITC.TTF");
+   fontFamily: TempusSansITC;
+   advancedAntiAliasing: true;
+}

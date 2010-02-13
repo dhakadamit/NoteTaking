@@ -2,9 +2,194 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8279d476-0470-484f-975d-c804158f338e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/flex/src/assets/css/images.css" afterPath="$PROJECT_DIR$/app/flex/src/assets/css/images.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/NoteTaking.swf" afterPath="$PROJECT_DIR$/public/NoteTaking.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/images.css" afterPath="$PROJECT_DIR$/public/assets/css/images.css" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-C.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-L.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-V.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\detailSectionHeader.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\inheritedSummary.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\AS3XMLHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\playerProductInstall.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\http\GAEHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\Header.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\ViewPage.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\DirectCouchDBHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\CommandsController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-J.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\ServiceErrorEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-N.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\collapsed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\JSONSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-B.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\XMLSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\ModelsMetadata.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\XRx.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-A.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\collections\ModelsCollection.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\GenericServiceErrors.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\PersonDetailsPage.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\models\RxTreeModel.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\AuxHTTPController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\RxAutoCompleteItemEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-E.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\ServiceCallStopEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\CacheController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\history\history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PushErrorEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\ServerPushEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\ServicesController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-F.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\validators\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\collections\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\models\RxModel.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\ModelsController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\mock\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\Fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\history\historyFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\BinaryAttachment.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\restfulx-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\CacheUpdateEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\MockXMLHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-P.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\air\AIRServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\DateTimeTextInput.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\NoteTaking.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\AfterDestroyEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\collections\RxCollection.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\ChangeResponder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\ISyncingServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\mxml-tags.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\air\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-U.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\commands\CommandsEventDispatcher.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\UndoRedoController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-classes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\AfterCreateEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\http\JSONHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-D.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\IVersioningServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\AuxAIRController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\MockDirectCouchDBHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-X.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\IServiceErrors.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\IServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-W.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\AC_OETags.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\titleTableBottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\MultiPartRequestBuilder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\ServiceCallStartEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\.settings\org.eclipse.wst.validation.prefs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\inherit-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\expanded.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\CommandExecutionEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\Blog.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\ISerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\ServerPushController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\AfterSaveEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\RxApplicationController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PullStartEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\air\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\GenericSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-I.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\title-bar.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\AS3JSONHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\http\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-G.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\class-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\ChangeController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\appendixes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\mock\MockAuxHTTPController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\collections\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\MoneyTextInput.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\as3http\AS3GAEHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\commands\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PushStartEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\NoteTaking.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\MockJSONHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\lib\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-H.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-Y.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\history\history.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\RxFileReference.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\src\assets\AutoComplete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-K.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\SerializersController.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PushEndEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-O.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\titleTableTop.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\DirectoryPage.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\IFunctionalResponder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\XMLServiceErrors.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\FormStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\package-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\models\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-S.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\Rx.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\index-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\asdoc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\EditPage.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\titleTableMiddle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-T.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\ServiceResponder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\http\XMLHTTPServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\MockAIRServiceProvider.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\DateTextInput.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\commands\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\AfterUpdateEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\RxUtils.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-Z.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-R.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\images\detailHeaderRule.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\UndoRedoResponder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\validators\ServiceErrorValidator.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\.project" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\Inflector.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\UUID.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\validators\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\GAEXMLSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\HomePage.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-M.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\all-index-Q.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PushItemEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\CouchDBJSONSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\.actionScriptProperties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\controllers\mock\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\.flexLibProperties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\class-list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\mock\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\css\ContactsApplication.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\events\PullEndEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\serializers\VOSerializer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\components\rx\RxAutoComplete.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\Blog.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\models\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\commands\ICommand.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\services\http\package-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\bin\api\org\restfulx\utils\TypedArray.html" afterPath="" />
     </list>
     <ignored path=".idea/" />
     <ignored path="NoteTaking.iws" />
@@ -24,6 +209,32 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NoteTaking" />
+  </component>
+  <component name="FileColors" enabled="true" enabledForTabs="true" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="11" selection-start="59" selection-end="59" vertical-scroll-proportion="0.03601695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+      </list>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="true" id="Add" />
@@ -67,6 +278,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NoteTaking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteTaking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteTaking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -133,8 +358,28 @@
   <component name="PropertiesComponent">
     <property name="GoToAction.allIncluded" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
-  <component name="RunManager" selected="Rails.Development: NoteTaking">
+  <component name="RunManager" selected="Rake.routes">
+    <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="NoteTaking" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -239,11 +484,12 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: NoteTaking" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: NoteTaking" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -265,20 +511,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16220029" sideWeight="0.6613546" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -296,7 +542,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Skins]: Added skins and customised accordian and background" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Skins]: Added skins properly with css, fonts and skins.. working nicely" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -311,9 +557,19 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="[Misc]: renaming project" />
     <MESSAGE value="[Skins]: Added skins and customised accordian and background" />
+    <MESSAGE value="[Skins]: Added skins properly with css, fonts and skins.. working nicely" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="59" selection-end="59" vertical-scroll-proportion="0.03601695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 

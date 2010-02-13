@@ -371,7 +371,7 @@ DataGrid
 	textSelectedColor:#ffffff;
 }
 Tree {
-    folderClosedIcon: Embed(source='assets/images/folder_.png');
+    folderClosedIcon: Embed(source='assets/images/folder.png');
     folderOpenIcon: Embed(source='assets/images/folder_open.png');
     defaultLeafIcon: Embed(source='assets/images/new_page.png');
     selectionColor: #212121;

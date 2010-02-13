@@ -21,13 +21,15 @@
 				
 		]]>
 	</mx:Script>
+	
+	<mx:Style source="assets/css/images.css"/>
 	<controller:NoteTakingApplicationController id="frontController"/> 
 	
 		<mx:VBox id="applicationContent" width="1280" paddingTop="0" paddingLeft="20" paddingRight="20" verticalGap="0"
-			horizontalScrollPolicy="off" verticalScrollPolicy="off">
+			horizontalScrollPolicy="off" verticalScrollPolicy="off" borderStyle="none">
 			
-			<mx:Accordion id="mainAccordian" width="100%" height="100%" paddingBottom="50" paddingLeft="50" paddingRight="50" paddingTop="50" verticalGap="10">
-				<comps:NotesListing label="List All Notes" id="notesListing" width="100%" height="100%"/>
+			<mx:Accordion id="mainAccordian" width="100%" height="100%" paddingTop="50" paddingBottom="50" paddingLeft="20" paddingRight="20" verticalGap="10" selectedIndex="0">
+				<comps:NotesListing label="List All Notes" id="notesListing" top="50" bottom="50" left="20" right="20" width="100%" height="100%" paddingTop="20" paddingLeft="20" paddingRight="20" paddingBottom="20"/>
 				<comps:CreateNote label="Create a new note" id="createNote" width="100%" height="100%"/>
 				<comps:EditNote label="Edit note" id="editNote" width="100%" height="100%"/>	
 			</mx:Accordion>

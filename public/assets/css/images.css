@@ -1,0 +1,96 @@
+/* CSS file */
+
+Accordion
+{
+	headerStyleName: accordionHeader;
+	backgroundAlpha: 0;
+	border-alpha: 0;
+	border-style: none;
+}
+accordianHeaderStyle
+{
+	selected-up-skin: Embed(source="../images/acc_selected.png");
+	up-skin: Embed(source="../images/acc.png");
+}
+
+Application
+{
+	background-image: Embed(source="../images/application_bg.png");
+}
+ButtonBar
+{
+	over: Embed(source="../images/button_bar_over.png");
+	selected: Embed(source="../images/button_bar_selected.png");
+	up: Embed(source="../images/button_bar_up.png");
+	firstButtonStyleName: "buttonBarFirstButton";
+	lastButtonStyleName: "buttonBarLastButton";
+}
+Button
+{
+	down-skin: Embed(source="../images/button_up.png");
+	over-skin: Embed(source="../images/button_over.png");
+	up-skin: Embed(source="../images/button_up.png");
+}
+DataGrid
+{
+	background-image: Embed(source="../images/content_bg.png");
+}
+.buttonBarFirstButton
+{
+	over: Embed(source="../images/firstButton_over.png");
+	selected: Embed(source="../images/firstButton_selected.png");
+	up: Embed(source="../images/firstButton_up.png");
+}
+ProgressBar
+{
+	indeterminateSkin: Embed(source="../images/indeterminateSkin.png");
+	barSkin: Embed(source="../images/progressbar_bar.png");
+	trackSkin: Embed(source="../images/progressbar_bg.png");
+}
+TextInput
+{
+	selected: Embed(source="../images/input_bg.png");
+	disabled: Embed(source="../images/input_disabled_bg.png");
+}
+.buttonBarLastButton
+{
+	over: Embed(source="../images/lastButton_over.png");
+	selected: Embed(source="../images/lastButton_selected.png");
+	up: Embed(source="../images/lastButton_up.png");
+}
+TabBar
+{
+	tabStyleName: "tabBarTab";
+	firstTabStyleName: "tabBarTab";
+	lastTabStyleName: "tabBarTab";
+}
+.tabBarTab
+{
+	disabledIcon: Embed(source="../images/tab_disabled.png");
+	selectedUpIcon: Embed(source="../images/tab_selected.png");
+	upIcon: Embed(source="../images/tab.png");
+}
+ScrollThumb
+{
+	overSkin: Embed(source="../images/thumb_over.png");
+	upSkin: Embed(source="../images/thumb_up.png");
+}
+ScrollBar
+{
+	upArrowOverSkin: Embed(source="../images/top_arrow_over.png");
+	upArrowUpSkin: Embed(source="../images/top_arrow_up.png");
+	trackSkin: Embed(source="../images/track.png");
+}
+.accordionHeader
+{
+	paddingLeft: 30;
+	paddingBottom: 10;
+	fontSize: 11;
+	upSkin: Embed(source="../images/acc_up.png");
+	overSkin: Embed(source="../images/acc.png");
+	downSkin: Embed(source="../images/acc_up.png");
+	selectedUpSkin: Embed(source="../images/acc.png");
+	selectedOverSkin: Embed(source="../images/acc.png");
+	selectedDownSkin: Embed(source="../images/acc.png");
+	selectedDisabledSkin: Embed(source="../images/acc.png");
+}

@@ -4,7 +4,7 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="ProjectDetails">
-    <option name="projectName" value="Blog" />
+    <option name="projectName" value="NoteTaking" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Ruby SDK 1.8.6 (C:\Ruby\bin\ruby.exe)" project-jdk-type="RUBY_SDK" />
   <component name="SvnBranchConfigurationManager">

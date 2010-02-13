@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Blog</name>
+	<name>NoteTaking</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -19,7 +19,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<location>C:/Documents and Settings/dhakadamit/My Documents/Work/Blog/public</location>
+			<location>C:/Documents and Settings/dhakadamit/My Documents/Work/NoteTaking/public</location>
 		</link>
 	</linkedResources>
 </projectDescription>

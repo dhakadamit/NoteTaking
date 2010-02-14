@@ -38,7 +38,7 @@ package com.notetaking.utils
             service.method = "POST";
             service.request = request;
             service.useProxy = false;
-            service.headers = {X_HTTP_METHOD_OVERRIDE: "PUT"};
+            service.headers = {"X-HTTP-METHOD-OVERRIDE": "PUT"};
             var call:AsyncToken = service.send();
             call.addResponder(responder);
         }

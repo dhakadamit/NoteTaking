@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8279d476-0470-484f-975d-c804158f338e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/flex/src/com/notetaking/utils/ServiceUtils.as" afterPath="$PROJECT_DIR$/app/flex/src/com/notetaking/utils/ServiceUtils.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/NoteTaking.swf" afterPath="$PROJECT_DIR$/public/NoteTaking.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="0e4d8821-d52b-4240-ace1-cca3c4e0f572" name="Ignored" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-    </list>
+    <list id="0e4d8821-d52b-4240-ace1-cca3c4e0f572" name="Ignored" comment="" />
     <ignored path="NoteTaking.iws" />
     <ignored path="log/" />
     <ignored path=".idea/" />

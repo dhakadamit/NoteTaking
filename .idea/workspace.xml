@@ -2,12 +2,106 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8279d476-0470-484f-975d-c804158f338e" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\lastButton_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_selectedUpIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\css\main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/NoteTaking.swf" afterPath="$PROJECT_DIR$/public/NoteTaking.swf" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_selectedOverIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_selectedUpIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\progressbar_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\acc_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\folder_open.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\indeterminateSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\thumb_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\slider_track.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\comboBox_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\ColorPicker_upSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_bar_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_selectedOverIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\application_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\ColorPicker_downSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\progressbar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_upArrowDownSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\application_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\lastButton2_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\fonts\GOTHIC.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\menuBar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_disabledIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_upIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\tab.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\top_arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\slider_thumbOver.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_downArrowDownSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_upIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_selectedDownIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\ColorPicker_overSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\slider_thumbUp.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\firstButton2_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_selectedDisabledIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\input_disabled_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\comboBox_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_downArrowUpSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_bar_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_disabledIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_upArrowOverSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\vslider_track.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_overIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\lastButton2_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_selectedDisabledIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\folder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\input_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\nextMonthUpSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\tab_selected.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/flex/src/com/notetaking/model/enums/WebServiceUrls.as" afterPath="$PROJECT_DIR$/app/flex/src/com/notetaking/model/enums/WebServiceUrls.as" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\css\images.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_bar2_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\firstButton_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\fonts\verdana.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_downArrowOverSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\top_arrow_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\prevMonthUpSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_downIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\content_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\firstButton_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_overIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\RadioButton_selectedDownIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\bottom_arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\comboBox_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\panel_dec_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\firstButton2_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\fonts\Verdana_Bold.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\ColorPicker_disabledSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\slider_thumbDown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\NS_upArrowUpSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\track.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\bottom_arrow_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\acc_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\firstButton_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\acc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\tab_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\CheckBox_downIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_bar2_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\thumb_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\prevMonthOverSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\menuBar_itemOver.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\new_page.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\panel_dec_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\header_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\lastButton_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\nextMonthOverSkin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\button_bar_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\acc_.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\dhakadamit\My Documents\Work\NoteTaking\public\assets\images\lastButton_up.png" afterPath="" />
     </list>
-    <ignored path=".idea/" />
+    <list id="0e4d8821-d52b-4240-ace1-cca3c4e0f572" name="Ignored" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+    </list>
     <ignored path="NoteTaking.iws" />
+    <ignored path="log/" />
+    <ignored path=".idea/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +122,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="99" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.7923729">
+            <state line="34" column="40" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://C:/Ruby/lib/ruby/1.8/webrick/server.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="20" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.29661018">
               <folding />
             </state>
           </provider>
@@ -84,7 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,7 +276,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -193,6 +296,66 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:drop" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="NoteTaking" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:create" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="NoteTaking" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:create" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="NoteTaking" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -234,6 +397,18 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="CHOOSE_MANUALLY" VALUE="true" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -308,12 +483,15 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: NoteTaking" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: NoteTaking" />
       <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:drop" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -334,25 +512,25 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="878" extended-state="6" />
+    <frame x="-4" y="-4" width="1448" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16220029" sideWeight="0.6613546" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6998672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -366,8 +544,8 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Misc]: Fixed routes bug" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Bug]: Fixed bug with hardcoding locahost" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
@@ -384,6 +562,7 @@
     <MESSAGE value="[Skins]: Added skins properly with css, fonts and skins.. working nicely" />
     <MESSAGE value="[Misc]: Deleted bin folder." />
     <MESSAGE value="[Misc]: Fixed routes bug" />
+    <MESSAGE value="[Bug]: Fixed bug with hardcoding locahost" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,7 +570,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="99" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.7923729">
+        <state line="34" column="40" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby/lib/ruby/1.8/webrick/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="20" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.29661018">
           <folding />
         </state>
       </provider>

@@ -7,6 +7,7 @@ package com.notetaking.command
 	import com.notetaking.model.NoteTakingApplicationModelLocator;
 	import com.notetaking.model.builders.NotesBuilder;
 	
+	import mx.controls.Alert;
 	import mx.rpc.IResponder;
 
 	public class GetAllNotesCommand implements ICommand, IResponder
@@ -32,6 +33,7 @@ package com.notetaking.command
 		
 		public function fault(info:Object):void
 		{
+			Alert.show("Server error");
 		}
 		
 	}

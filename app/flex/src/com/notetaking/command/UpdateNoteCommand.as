@@ -19,10 +19,12 @@ package com.notetaking.command
 		
 		public function result(data:Object):void
 		{
+			Alert.show("Successfully updated!");
 		}
 		
 		public function fault(info:Object):void
 		{
+			Alert.show("Server error");
 		}
 		
 	}

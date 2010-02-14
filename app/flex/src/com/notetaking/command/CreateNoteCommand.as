@@ -8,6 +8,7 @@ package com.notetaking.command
 	import com.notetaking.model.builders.NoteBuilder;
 	import com.notetaking.model.enums.Tabs;
 	
+	import mx.controls.Alert;
 	import mx.core.Application;
 	import mx.rpc.IResponder;
 
@@ -31,6 +32,7 @@ package com.notetaking.command
 		
 		public function fault(info:Object):void
 		{
+			Alert.show("Server error");
 		}
 		
 	}

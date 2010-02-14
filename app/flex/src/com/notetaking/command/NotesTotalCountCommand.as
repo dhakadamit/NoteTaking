@@ -6,6 +6,7 @@ package com.notetaking.command
 	import com.notetaking.event.NotesTotalCountEvent;
 	import com.notetaking.model.NoteTakingApplicationModelLocator;
 	
+	import mx.controls.Alert;
 	import mx.rpc.IResponder;
 
 	public class NotesTotalCountCommand implements ICommand, IResponder
@@ -33,6 +34,7 @@ package com.notetaking.command
 		
 		public function fault(info:Object):void
 		{
+			Alert.show("Server error");
 		}
 		
 	}

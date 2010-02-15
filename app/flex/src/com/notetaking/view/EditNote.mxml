@@ -3,6 +3,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import mx.managers.PopUpManager;
 			import com.notetaking.event.UpdateNoteEvent;
 			import com.notetaking.model.NoteTakingApplicationModelLocator;
 			import com.notetaking.model.Tag;
@@ -22,6 +23,9 @@
 				note.content = content.htmlText;
 				note.plainContent = content.text;
 				note.tags = tagList();
+				
+				PopUpManager.addPopUp(model.progressBar, this, true);
+				PopUpManager.centerPopUp(model.progressBar);
 				new UpdateNoteEvent(note).dispatch();
 			}
 			

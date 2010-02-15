@@ -11,11 +11,26 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.model.NoteTakingApplicationModelLocator;
+			import mx.managers.PopUpManager;
+			import com.notetaking.view.components.Spinner;
 			import com.adobe.utils.DateUtil;
 			import mx.controls.Alert;
 			
+			[Bindable]
+			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+			
 			private function initApp():void {
-				applicationContent.height = Application.application.height;				
+				applicationContent.height = Application.application.height;		
+				setupProgressBar();		
+			}
+			
+			private function setupProgressBar():void {
+				var progressBar:Spinner = new Spinner();
+				progressBar.setStyle("tickColor", "#3b3b3b");
+				model.progressBar = PopUpManager.createPopUp(progressBar, Spinner, true);
+				PopUpManager.addPopUp(progressBar, this, true);
+				PopUpManager.removePopUp(progressBar);
 			}
 				
 		]]>

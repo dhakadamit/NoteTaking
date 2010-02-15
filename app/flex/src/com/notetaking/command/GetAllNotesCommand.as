@@ -29,10 +29,12 @@ package com.notetaking.command
 		public function result(data:Object):void
 		{
 			model.notes = new NotesBuilder().buildFromXml(data.result);
+			model.hideProgressBar();
 		}
 		
 		public function fault(info:Object):void
 		{
+			model.hideProgressBar();
 			Alert.show("Server error");
 		}
 		

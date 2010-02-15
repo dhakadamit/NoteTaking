@@ -28,10 +28,12 @@ package com.notetaking.command
 		{
 			model.selectedNote = new NoteBuilder().buildFromXml(data.result);	
 			Application.application.mainControlBar.selectedIndex = Tabs.EDIT;
+			model.hideProgressBar();
 		}
 		
 		public function fault(info:Object):void
 		{
+			model.hideProgressBar();
 			Alert.show("Server error");
 		}
 		

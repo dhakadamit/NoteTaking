@@ -3,6 +3,7 @@
 		
 		<mx:Script>
 			<![CDATA[
+				import mx.managers.PopUpManager;
 				import com.notetaking.model.enums.Tabs;
 				import com.notetaking.event.NotesTotalCountEvent;
 				import mx.core.Application;
@@ -61,6 +62,9 @@
 				}
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
+					PopUpManager.addPopUp(model.progressBar, this, true);
+					PopUpManager.centerPopUp(model.progressBar);
+				
 					new GetAllNotesEvent(pageNumber, contentQuery, titleQuery, tagQuery).dispatch();
 					new NotesTotalCountEvent(contentQuery, titleQuery, tagQuery, callback).dispatch();
 				}

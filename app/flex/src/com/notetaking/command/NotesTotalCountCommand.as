@@ -30,10 +30,12 @@ package com.notetaking.command
 			if(_callback != null) {
 				_callback();
 			}
+			model.hideProgressBar();
 		}
 		
 		public function fault(info:Object):void
 		{
+			model.hideProgressBar();
 			Alert.show("Server error");
 		}
 		

@@ -3,6 +3,9 @@ package com.notetaking.model
 	import com.adobe.cairngorm.model.ModelLocator;
 	
 	import mx.collections.ArrayCollection;
+	import mx.core.Application;
+	import mx.core.IFlexDisplayObject;
+	import mx.managers.PopUpManager;
 
 	[Bindable]
 	public class NoteTakingApplicationModelLocator implements ModelLocator
@@ -12,6 +15,7 @@ package com.notetaking.model
 		public var notes:ArrayCollection = new ArrayCollection();
 		public var notesTotalCount:Number;
 		public var selectedNote:Note;
+		public var progressBar:IFlexDisplayObject;
 		
 		public static function getInstance():NoteTakingApplicationModelLocator{
             if (modelLocator == null) {
@@ -25,6 +29,10 @@ package com.notetaking.model
 			if (modelLocator != null) {
                 throw new Error("Only one NoteTakingApplicationModelLocator instance may be instantiated.");
             }
+		}
+		
+		public function hideProgressBar():void {
+			PopUpManager.removePopUp(progressBar);
 		}
 
 	}

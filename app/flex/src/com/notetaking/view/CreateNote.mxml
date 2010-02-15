@@ -3,10 +3,15 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.model.NoteTakingApplicationModelLocator;
+			import mx.managers.PopUpManager;
 			import com.notetaking.model.Tag;
 			import com.notetaking.model.Note;
 			import com.notetaking.event.CreateNoteEvent;
 			import mx.collections.ArrayCollection;
+			
+			[Bindable]
+			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			
 			private function init():void {
 				submit.addEventListener(MouseEvent.CLICK, createNewNote);
@@ -18,6 +23,9 @@
 				note.content = content.htmlText;
 				note.plainContent = content.text;
 				note.tags = tagList();
+				
+				PopUpManager.addPopUp(model.progressBar, this, true);
+				PopUpManager.centerPopUp(model.progressBar);
 				new CreateNoteEvent(note).dispatch();
 			}
 			

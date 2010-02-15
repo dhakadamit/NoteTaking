@@ -87,10 +87,10 @@
 		</mx:HBox>
 	
 		
-		<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" rowHeight="20" itemClick="showItem(event);">
+		<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" width="100%" rowHeight="20" itemClick="showItem(event);" fontFamily="Verdana" fontSize="10">
 			<mx:columns>
-				<mx:DataGridColumn dataField="title" headerText="Title"/>
-				<mx:DataGridColumn dataField="plainContent" width="700" headerText="Content" wordWrap="true"/>
+				<mx:DataGridColumn dataField="title" width="300" headerText="Title"/>
+				<mx:DataGridColumn dataField="plainContent" width="500" headerText="Content" wordWrap="true"/>
 				<mx:DataGridColumn dataField="createdAt" width="68" headerText="CreatedAt"/>
 				<mx:DataGridColumn headerText="Tags">
 					<mx:itemRenderer>

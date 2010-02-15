@@ -109,7 +109,7 @@
 			<mx:columns>
 				<mx:DataGridColumn dataField="title" width="300" headerText="Title"/>
 				<mx:DataGridColumn dataField="plainContent" width="500" headerText="Content" wordWrap="true"/>
-				<mx:DataGridColumn dataField="createdAt" width="68" headerText="CreatedAt"/>
+				<!-- <mx:DataGridColumn dataField="createdAt" width="68" headerText="CreatedAt"/> -->
 				<mx:DataGridColumn headerText="Tags">
 					<mx:itemRenderer>
 						<mx:Component>

@@ -33,17 +33,31 @@
 					paginationManager.nextSetOfResults();
 				}
 				
-				private function performSearch(event:Event):void {
+				private function findAll(event:Event):void{
+					contentQuery = "";
+					titleQuery = "";
+					tagQuery = "";
+					initializePaginationManager();
+				}
+				
+				private function performSearch(event:Event = null):void {
 					contentQuery = contentQueryBox.text;
 					titleQuery = titleQueryBox.text;
 					tagQuery = tagQueryBox.text.split(" ").join(",");
 					initializePaginationManager();
 				}
 				
+				private function submitForm(event:KeyboardEvent):void {
+					if(event.charCode == 13)
+						performSearch();
+				}
+				
 				private function attachEvents():void {
+					searchForm.addEventListener(KeyboardEvent.KEY_DOWN, submitForm);
 					next.addEventListener(MouseEvent.CLICK, paginationManager.nextSetOfResults);
 					previous.addEventListener(MouseEvent.CLICK, paginationManager.previousSetOfResults);
-					submitQuery.addEventListener(MouseEvent.CLICK, performSearch);	
+					submitQuery.addEventListener(MouseEvent.CLICK, performSearch);
+					listAll.addEventListener(MouseEvent.CLICK, findAll);	
 				}
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
@@ -57,7 +71,7 @@
 				
 				private function showItem(event:ListEvent):void {
 					model.selectedNote = Note (event.itemRenderer.data);
-					Application.application.mainAccordian.selectedIndex = Tabs.EDIT;
+					Application.application.mainControlBar.selectedIndex = Tabs.EDIT;
 				}
 					
 			]]>
@@ -68,7 +82,7 @@
 			
 		<mx:HBox width="100%">
 			<mx:VBox width="70%">
-				<mx:Form width="100%">
+				<mx:Form id="searchForm" width="100%">
 					<mx:HBox width="100%">
 						<mx:Label text="Content" width="60" fontWeight="bold" fontSize="12"/>
 						<mx:TextInput id="contentQueryBox" width="70%"/>
@@ -81,7 +95,11 @@
 						<mx:Label text="Tags" width="60" fontWeight="bold" fontSize="12"/>
 						<mx:TextInput id="tagQueryBox" width="70%"/>
 					</mx:HBox>
-					<mx:Button label="Search" id="submitQuery"/>
+					<mx:HBox>
+						<mx:Button label="Search" id="submitQuery"/>
+						<mx:Button label="List all" id="listAll"/>	
+					</mx:HBox>
+					
 				</mx:Form>									
 			</mx:VBox>
 		</mx:HBox>

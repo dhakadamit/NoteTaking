@@ -27,7 +27,7 @@ package com.notetaking.command
 		public function result(data:Object):void
 		{
 			model.selectedNote = new NoteBuilder().buildFromXml(data.result);	
-			Application.application.mainAccordian.selectedIndex = Tabs.EDIT;
+			Application.application.mainControlBar.selectedIndex = Tabs.EDIT;
 		}
 		
 		public function fault(info:Object):void

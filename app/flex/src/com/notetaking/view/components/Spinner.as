@@ -31,7 +31,7 @@ package com.notetaking.view.components
         private var _numTicks:int = 12;
         private var numTicksChanged:Boolean;
         
-        private var _size:Number = 30;
+        private var _size:Number = 60;
         private var sizeChanged:Boolean;
         
         private var _tickWidth:Number = 3;

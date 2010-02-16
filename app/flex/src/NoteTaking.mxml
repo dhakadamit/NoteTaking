@@ -27,7 +27,7 @@
 			
 			private function setupProgressBar():void {
 				var progressBar:Spinner = new Spinner();
-				progressBar.setStyle("tickColor", "#3b3b3b");
+				progressBar.setStyle("tickColor", "#FFCF4D");
 				model.progressBar = PopUpManager.createPopUp(progressBar, Spinner, true);
 				PopUpManager.addPopUp(progressBar, this, true);
 				PopUpManager.removePopUp(progressBar);
@@ -45,7 +45,7 @@
 			borderStyle="none">
 			
 			<mx:TabNavigator id="mainControlBar" width="100%" height="100%"
-					 paddingBottom="50" paddingLeft="20" paddingRight="20" selectedIndex="0">
+					 paddingBottom="50" paddingLeft="20" paddingRight="20">
 				<comps:NotesListing label="List All Notes" id="notesListing" top="50" bottom="50" left="20" right="20" width="100%" height="100%" paddingTop="20" paddingLeft="20" paddingRight="20" paddingBottom="20"/>
 				<comps:CreateNote label="Create a new note" id="createNote" width="100%" height="100%"/>
 				<comps:EditNote label="Edit note" id="editNote" width="100%" height="100%"/>	

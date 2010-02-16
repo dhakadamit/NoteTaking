@@ -10966,3 +10966,960 @@ Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-14 16:19
   [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
 Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:20:44) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTagging Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 468ms (View: 15, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:41) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 78ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:41) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 46ms (View: 0, DB: 62) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:43) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 32) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:43) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 94ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:45) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:45) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:46) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:47) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:48) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (31.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 31) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:48) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 63ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:49) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (15.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (16.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 47) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:49) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:51) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 31) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:51) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:52) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:52) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 63ms (View: 16, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:21:53) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:21:53) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update to xml (for 127.0.0.1 at 2010-02-16 22:21:57) [PUT]
+  Parameters: {"id"=>"6", "note"=>{"title"=>"testing spinner", "tag_list"=>nil, "content"=>"<TEXTFORMAT LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"11\" COLOR=\"#FFFFFF\" LETTERSPACING=\"0\" KERNING=\"0\">test</FONT></P></TEXTFORMAT>", "plain_content"=>"test"}}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = 6) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Completed in 1765ms (View: 15, DB: 0) | 200 OK [http://localhost/notes/6.xml?_method=PUT]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#create to xml (for 127.0.0.1 at 2010-02-16 22:22:05) [POST]
+  Parameters: {"note"=>{"title"=>"test", "tag_list"=>nil, "content"=>"<TEXTFORMAT LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"11\" COLOR=\"#FFFFFF\" LETTERSPACING=\"0\" KERNING=\"0\">test</FONT></P></TEXTFORMAT>", "plain_content"=>"test"}}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mNote Create (0.0ms)[0m   [0;1mINSERT INTO `notes` (`updated_at`, `title`, `content`, `plain_content`, `created_at`) VALUES('2010-02-16 16:52:05', 'test', '<TEXTFORMAT LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"11\" COLOR=\"#FFFFFF\" LETTERSPACING=\"0\" KERNING=\"0\">test</FONT></P></TEXTFORMAT>', 'test', '2010-02-16 16:52:05')[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 78ms (View: 0, DB: 46) | 200 OK [http://localhost/notes.xml]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update to xml (for 127.0.0.1 at 2010-02-16 22:22:09) [PUT]
+  Parameters: {"id"=>"7", "note"=>{"title"=>"test", "tag_list"=>nil, "content"=>"<TEXTFORMAT LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"11\" COLOR=\"#FFFFFF\" LETTERSPACING=\"0\" KERNING=\"0\">test</FONT></P></TEXTFORMAT>", "plain_content"=>"test"}}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = 7) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/7.xml?_method=PUT]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:22:11) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 31) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:22:11) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (16.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:22:22) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (15.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 62ms (View: 16, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:22:22) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:22:25) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 157ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:22:25) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:23:05) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:23:05) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:23:09) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:23:10) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:23:14) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:23:14) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:23:16) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:23:16) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 94ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update to xml (for 127.0.0.1 at 2010-02-16 22:23:18) [PUT]
+  Parameters: {"id"=>"7", "note"=>{"title"=>"test", "tag_list"=>nil, "content"=>"<TEXTFORMAT LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"11\" COLOR=\"#FFFFFF\" LETTERSPACING=\"0\" KERNING=\"0\">test</FONT></P></TEXTFORMAT>", "plain_content"=>"test"}}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = 7) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/7.xml?_method=PUT]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:23:22) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:23:22) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:25:49) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:25:49) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:26:29) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (16.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:26:29) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:28:27) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 94ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:28:27) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:29:00) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:29:04) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTagging Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 485ms (View: 0, DB: 32) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:29:04) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:29:08) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (16.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:29:08) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:30:28) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:30:28) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:30:29) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 31) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:30:30) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 16, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:30:52) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:30:52) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:31:08) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (15.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 15) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:31:08) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:01) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (16.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 32) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:01) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:04) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:04) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:05) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (16.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 78ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:05) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:08) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (16.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:08) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:10) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (0.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 78ms (View: 15, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:10) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:32:11) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 62ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:32:11) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 156ms (View: 0, DB: 16) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:33:25) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTagging Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (16.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 453ms (View: 15, DB: 32) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:33:28) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 63ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:33:28) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:33:30) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:33:31) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Load (16.0ms)[0m   [0mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;36;1mNote Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 109ms (View: 0, DB: 16) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index to xml (for 127.0.0.1 at 2010-02-16 22:33:35) [GET]
+  Parameters: {"content_query"=>"", "page_number"=>"1", "tags"=>"", "title_query"=>""}
+  [4;36;1mNote Load (0.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') ORDER BY created_at DESC[0m
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 7)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 6)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 5)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.0ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.0ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_type = 'Note') AND (`taggings`.taggable_id = 1)) [0m
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/notes.xml?page_number=1&content_query=&title_query=&tags=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#total_count to xml (for 127.0.0.1 at 2010-02-16 22:33:35) [GET]
+  Parameters: {"content_query"=>"", "tags"=>"", "title_query"=>""}
+  [4;35;1mNote Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `notes` WHERE (plain_content LIKE '%' AND title LIKE '%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/total_count.xml?content_query=&title_query=&tags=]

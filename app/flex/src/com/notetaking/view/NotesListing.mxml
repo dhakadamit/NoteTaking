@@ -110,7 +110,7 @@
 	
 		
 		<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" 
-				width="100%" rowHeight="20" paddingTop="3" itemClick="showItem(event);" fontFamily="Verdana" fontSize="10">
+				width="100%" rowHeight="20" paddingTop="1" verticalScrollPolicy="off" itemClick="showItem(event);" fontFamily="Verdana" fontSize="10">
 			<mx:columns>
 				<mx:DataGridColumn dataField="title" width="300" headerText="Title"/>
 				<mx:DataGridColumn dataField="plainContent" width="500" headerText="Content" wordWrap="true"/>
@@ -120,22 +120,7 @@
 							<mx:Label text="{data.namesOfAllTags}"/>
 						</mx:Component>
 					</mx:itemRenderer>
-				</mx:DataGridColumn>
-				
-				<!-- <mx:DataGridColumn dataField="createdAt" width="68" headerText="CreatedAt"/> -->
-				<mx:DataGridColumn headerText="" width="40" paddingLeft="10" paddingRight="10">
-					<mx:itemRenderer>
-						<mx:Component>
-							<mx:HBox>
-								<mx:LinkButton>
-									<mx:overSkin>@Embed(source='../../../assets/images/CheckBox_selectedOverIcon.png')</mx:overSkin>
-									<mx:upSkin>@Embed(source='../../../assets/images/CheckBox_selectedUpIcon.png')</mx:upSkin>
-								</mx:LinkButton>	
-							</mx:HBox>
-						</mx:Component>
-					</mx:itemRenderer>
-				</mx:DataGridColumn>
-				
+				</mx:DataGridColumn>	
 			</mx:columns>
 		</mx:DataGrid>
 		

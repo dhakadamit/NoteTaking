@@ -29,7 +29,7 @@
 				} 	
 				
 				private function initializePaginationManager():void {
-					paginationManager.totalResultsPerPage = 15;
+					paginationManager.totalResultsPerPage = 10;
 					paginationManager.initialize();
 					paginationManager.nextSetOfResults();
 				}

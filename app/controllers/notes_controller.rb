@@ -3,9 +3,9 @@ class NotesController < ApplicationController
   # GET /notes.xml
   def index
     if(params[:tags].nil? || params[:tags].empty?)
-      @notes = Note.all(:conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 15
+      @notes = Note.all(:conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
     else
-      @notes = Note.find_tagged_with(params[:tags], :conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 15
+      @notes = Note.find_tagged_with(params[:tags], :conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
     end
     
     respond_to do |format|

@@ -1,7 +1,5 @@
 package com.notetaking.model.builders
 {
-	import com.notetaking.model.Tag;
-	
 	import mx.collections.ArrayCollection;
 	
 	public class TagsBuilder
@@ -14,6 +12,16 @@ package com.notetaking.model.builders
 			for each (var name:String in names) {
 				tags.addItem(new TagBuilder().withName(name).build());
 			}
+			return tags;
+		}
+		
+		public function buildFromXml(xmlList:XMLList):ArrayCollection {
+			var tags:ArrayCollection = new ArrayCollection();
+			
+			for each (var tag:XML in xmlList) {
+				tags.addItem(new TagBuilder().buildFromXml(tag));
+			}
+			
 			return tags;
 		}
 

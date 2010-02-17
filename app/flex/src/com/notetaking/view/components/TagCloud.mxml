@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init();" show="init();">
+	
+	<mx:Script>
+		<![CDATA[
+			import com.notetaking.model.NoteTakingApplicationModelLocator;
+			import com.notetaking.event.GetAllTagsEvent;
+			
+			[Bindable]
+			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+			
+			public function init():void {
+				new GetAllTagsEvent().dispatch();
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:DataGrid dataProvider="{model.tags}">
+		<mx:columns>
+			<mx:DataGridColumn dataField="name"/>
+			<mx:DataGridColumn dataField="count"/>
+		</mx:columns>
+	</mx:DataGrid>
+</mx:Canvas>

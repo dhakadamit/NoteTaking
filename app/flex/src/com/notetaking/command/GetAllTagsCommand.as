@@ -3,38 +3,36 @@ package com.notetaking.command
 	import com.adobe.cairngorm.commands.ICommand;
 	import com.adobe.cairngorm.control.CairngormEvent;
 	import com.notetaking.business.NotesDelegate;
-	import com.notetaking.event.GetAllNotesEvent;
+	import com.notetaking.event.GetAllTagsEvent;
 	import com.notetaking.model.NoteTakingApplicationModelLocator;
-	import com.notetaking.model.builders.NotesBuilder;
+	import com.notetaking.model.builders.TagsBuilder;
 	
 	import mx.controls.Alert;
 	import mx.rpc.IResponder;
 
-	public class GetAllNotesCommand implements ICommand, IResponder
+	public class GetAllTagsCommand implements ICommand, IResponder
 	{
 		[Bindable]
 		private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 		
-		public function GetAllNotesCommand()
+		public function GetAllTagsCommand()
 		{
 		}
 
 		public function execute(event:CairngormEvent):void
 		{
-			var getAllNotesEvent:GetAllNotesEvent = GetAllNotesEvent (event);
+			var getAllTagsEvent:GetAllTagsEvent = GetAllTagsEvent (event);
 			var notesDelegate:NotesDelegate = new NotesDelegate(this);
-			notesDelegate.getAllNotes(getAllNotesEvent.pageNumber, getAllNotesEvent.contentQuery, getAllNotesEvent.titleQuery, getAllNotesEvent.tagQuery);
+			notesDelegate.getAllTags();
 		}
 		
 		public function result(data:Object):void
 		{
-			model.notes = new NotesBuilder().buildFromXml(data.result);
-			model.hideProgressBar();
+			model.tags = new TagsBuilder().buildFromXml(data.result.tag);
 		}
 		
 		public function fault(info:Object):void
 		{
-			model.hideProgressBar();
 			Alert.show("Server error");
 		}
 		

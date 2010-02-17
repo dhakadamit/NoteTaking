@@ -13,6 +13,7 @@ package com.notetaking.model
 		private static var modelLocator:NoteTakingApplicationModelLocator;
 		
 		public var notes:ArrayCollection = new ArrayCollection();
+		public var tags:ArrayCollection = new ArrayCollection();
 		public var notesTotalCount:Number;
 		public var selectedNote:Note;
 		public var progressBar:IFlexDisplayObject;

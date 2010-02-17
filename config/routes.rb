@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.total_count '/notes/total_count.:format', :controller => 'notes', :action => 'total_count', :conditions => {:method => :get}
-  
+  map.tags '/notes/tags.:format', :controller => 'notes', :action => 'tags', :conditions => {:method => :get}
+
   map.resources :notes
   
   # The priority is based upon order of creation: first created -> highest priority.

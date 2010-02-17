@@ -21,11 +21,15 @@ class NotesController < ApplicationController
       @count = Note.find_tagged_with(params[:tags], :conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'").size
     end
 
-    xm = Builder::XmlMarkup.new
-    xm.total_count {@count}
-
     respond_to do |format|
       format.xml  { render :xml => {:total_count => @count}.to_xml  }
+    end
+  end
+
+  def tags
+    @tags = Note.tag_counts
+    respond_to do |format|
+      format.xml  { render :xml => @tags.to_xml(:only => [:count, :name])  }
     end
   end
 
@@ -99,7 +103,4 @@ class NotesController < ApplicationController
     end
   end
 
-  def tags
-    @tags = Note.tag_counts
-  end
 end

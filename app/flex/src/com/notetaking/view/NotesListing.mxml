@@ -80,9 +80,6 @@
 					
 			]]>
 		</mx:Script>
-		
-		
-		<mx:Label text="All Notes" fontSize="14" fontWeight="bold"/>
 			
 		<mx:HBox width="100%">
 			<mx:VBox width="70%">
@@ -101,7 +98,7 @@
 					</mx:HBox>
 					<mx:HBox>
 						<mx:Button label="Search" id="submitQuery"/>
-						<mx:Button label="List all" id="listAll"/>	
+						<mx:Button label="View all" id="listAll"/>	
 					</mx:HBox>
 					
 				</mx:Form>									

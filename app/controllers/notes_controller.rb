@@ -63,7 +63,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        format.xml  { render :xml => @note, :status => 200}
+        format.xml  { render :xml => @note.to_xml(:methods => [:tag_list]), :status => 200}
       else
         format.xml  { render :xml => @note.errors, :status => :unprocessable_entity }
       end

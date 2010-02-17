@@ -1,9 +1,9 @@
 package com.notetaking.model
 {
 	import com.adobe.cairngorm.model.ModelLocator;
+	import com.notetaking.view.components.Spinner;
 	
 	import mx.collections.ArrayCollection;
-	import mx.core.Application;
 	import mx.core.IFlexDisplayObject;
 	import mx.managers.PopUpManager;
 
@@ -26,6 +26,10 @@ package com.notetaking.model
 
 		public function NoteTakingApplicationModelLocator()
 		{
+			var spinner:Spinner = new Spinner();
+			spinner.setStyle("tickColor", "#FFCF4D");
+			this.progressBar = PopUpManager.createPopUp(spinner, Spinner, true);
+				
 			if (modelLocator != null) {
                 throw new Error("Only one NoteTakingApplicationModelLocator instance may be instantiated.");
             }

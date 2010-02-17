@@ -21,16 +21,7 @@
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			
 			private function initApp():void {
-				applicationContent.height = Application.application.height;		
-				setupProgressBar();		
-			}
-			
-			private function setupProgressBar():void {
-				var progressBar:Spinner = new Spinner();
-				progressBar.setStyle("tickColor", "#FFCF4D");
-				model.progressBar = PopUpManager.createPopUp(progressBar, Spinner, true);
-				PopUpManager.addPopUp(progressBar, this, true);
-				PopUpManager.removePopUp(progressBar);
+				applicationContent.height = Application.application.height;				
 			}
 				
 		]]>

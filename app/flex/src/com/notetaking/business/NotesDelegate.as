@@ -43,6 +43,11 @@ package com.notetaking.business
 			ServiceUtils.httpPut(url, xml , this._responder, true); 
 		}
 		
+		public function deleteNote(noteId:String):void {
+			var url:String = WebServiceUrls.DELETE_NOTE.replace("id", noteId);
+			ServiceUtils.httpDestroy(url, this._responder); 
+		}
+		
 		public function totalCount(contentQuery:String = "", titleQuery:String = "", tagQuery:String = ""):void {
 			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.TOTAL_COUNT)
 							.withParameter("content_query", contentQuery)

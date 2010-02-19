@@ -135,8 +135,6 @@
 				<mx:upSkin>@Embed(source='../../../assets/images/nextMonthUpSkin.png')</mx:upSkin>
 			</mx:LinkButton>
 		</mx:HBox>
-		
-		<components:TagCloud width="100%" height="80%"/>
 
 		
 	</mx:VBox>

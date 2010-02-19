@@ -50,8 +50,9 @@ package com.notetaking.utils
             service.contentType = sendXML ? "application/xml" : "application/x-www-form-urlencoded";
             service.resultFormat = "e4x";
             service.method = "POST";
-            request = (request == null) ? {"_method":"DELETE"} : request["_method"] = "DELETE";            
+            request = (request == null) ? {"_method":"DELETE"} : request["_method"] = "DELETE";                        
             service.request = request;
+            service.headers = {"X-HTTP-METHOD-OVERRIDE": "DELETE"};
             service.useProxy = false;
             var call:AsyncToken = service.send();
             call.addResponder(responder);

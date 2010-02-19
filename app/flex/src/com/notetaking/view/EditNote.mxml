@@ -3,6 +3,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.event.DeleteNoteEvent;
 			import mx.managers.PopUpManager;
 			import com.notetaking.event.UpdateNoteEvent;
 			import com.notetaking.model.NoteTakingApplicationModelLocator;
@@ -14,7 +15,14 @@
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			
 			private function init():void {
-				submit.addEventListener(MouseEvent.CLICK, updateNewNote);
+				updateButton.addEventListener(MouseEvent.CLICK, updateNewNote);
+				deleteButton.addEventListener(MouseEvent.CLICK, deleteNote);
+			}
+			
+			private function deleteNote(event:Event) : void {
+				PopUpManager.addPopUp(model.progressBar, this, true);
+				PopUpManager.centerPopUp(model.progressBar);
+				new DeleteNoteEvent(model.selectedNote.id).dispatch();	
 			}
 			
 			private function updateNewNote(event:Event):void {
@@ -54,7 +62,11 @@
 			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>
 			<mx:TextInput id="tags" text="{model.selectedNote.namesOfAllTags}" width="70%"/>
 		</mx:HBox>
-		<mx:Button id="submit" label="Update"/>	
+		
+		<mx:HBox>
+			<mx:Button id="updateButton" label="Update"/>
+			<mx:Button id="deleteButton" label="Delete"/>
+		</mx:HBox>	
 	</mx:VBox>
 	
 </mx:Canvas>

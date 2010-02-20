@@ -16,13 +16,6 @@
 			
 			private function init():void {
 				updateButton.addEventListener(MouseEvent.CLICK, updateNewNote);
-				deleteButton.addEventListener(MouseEvent.CLICK, deleteNote);
-			}
-			
-			private function deleteNote(event:Event) : void {
-				PopUpManager.addPopUp(model.progressBar, this, true);
-				PopUpManager.centerPopUp(model.progressBar);
-				new DeleteNoteEvent(model.selectedNote.id).dispatch();	
 			}
 			
 			private function updateNewNote(event:Event):void {
@@ -65,7 +58,6 @@
 		
 		<mx:HBox>
 			<mx:Button id="updateButton" label="Update"/>
-			<mx:Button id="deleteButton" label="Delete"/>
 		</mx:HBox>	
 	</mx:VBox>
 	

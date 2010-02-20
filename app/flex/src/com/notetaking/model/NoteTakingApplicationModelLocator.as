@@ -6,6 +6,8 @@ package com.notetaking.model
 	import mx.collections.ArrayCollection;
 	import mx.core.IFlexDisplayObject;
 	import mx.managers.PopUpManager;
+	import mx.styles.CSSStyleDeclaration;
+	import mx.styles.StyleManager;
 
 	[Bindable]
 	public class NoteTakingApplicationModelLocator implements ModelLocator
@@ -28,7 +30,9 @@ package com.notetaking.model
 		public function NoteTakingApplicationModelLocator()
 		{
 			var spinner:Spinner = new Spinner();
-			spinner.setStyle("tickColor", "#FFCF4D");
+			var style:CSSStyleDeclaration = new CSSStyleDeclaration();
+			style.setStyle("tickColor", "#FFCF4D");
+			StyleManager.setStyleDeclaration("Spinner", style, true);
 			this.progressBar = PopUpManager.createPopUp(spinner, Spinner, true);
 				
 			if (modelLocator != null) {

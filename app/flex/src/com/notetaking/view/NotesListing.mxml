@@ -67,7 +67,7 @@
 				}
 				
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
-					PopUpManager.addPopUp(model.progressBar, this, true);
+					PopUpManager.addPopUp(model.progressBar, this, false);
 					PopUpManager.centerPopUp(model.progressBar);
 				
 					new GetAllNotesEvent(pageNumber, contentQuery, titleQuery, tagQuery).dispatch();

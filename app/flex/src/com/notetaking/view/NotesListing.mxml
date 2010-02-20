@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:VBox width="100%" verticalGap="10"
+<mx:Canvas width="100%"
 	 xmlns:mx="http://www.adobe.com/2006/mxml"
 	 xmlns:components="com.notetaking.view.components.*"
 	 creationComplete="init();" show="init();">
 		
 		<mx:Script>
 			<![CDATA[
+				import com.notetaking.event.DeleteNoteEvent;
+				import mx.events.DragEvent;
 				import mx.managers.PopUpManager;
 				import com.notetaking.model.enums.Tabs;
 				import com.notetaking.event.NotesTotalCountEvent;
@@ -84,6 +86,7 @@
 			]]>
 		</mx:Script>
 			
+	<mx:VBox verticalGap="20" top="20" left="30" right="30">		
 		<mx:HBox width="100%">
 			<mx:VBox width="70%">
 				<mx:Form id="searchForm" width="100%">
@@ -110,7 +113,9 @@
 	
 		
 		<mx:DataGrid id="notes" dataProvider="{model.notes}" rowCount="{model.notes.length}" 
-				width="100%" rowHeight="20" paddingTop="1" verticalScrollPolicy="off" itemClick="showItem(event);" fontFamily="Verdana" fontSize="10">
+				width="100%" rowHeight="20" paddingTop="1" verticalScrollPolicy="off" 
+				itemClick="showItem(event);" fontFamily="Verdana" fontSize="10"
+				dragEnabled="true" dropEnabled="true">
 			<mx:columns>
 				<mx:DataGridColumn dataField="title" width="300" headerText="Title"/>
 				<mx:DataGridColumn dataField="plainContent" width="500" headerText="Content" wordWrap="true"/>
@@ -135,6 +140,8 @@
 				<mx:upSkin>@Embed(source='../../../assets/images/nextMonthUpSkin.png')</mx:upSkin>
 			</mx:LinkButton>
 		</mx:HBox>
-
 		
 	</mx:VBox>
+	
+	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="initializePaginationManager"/>
+</mx:Canvas>

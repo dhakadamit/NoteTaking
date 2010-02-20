@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:Script>
+		<![CDATA[
+			import com.notetaking.event.DeleteNoteEvent;
+			import mx.managers.PopUpManager;
+			import com.notetaking.model.NoteTakingApplicationModelLocator;
+			import com.notetaking.model.Note;
+		
+			import mx.effects.easing.*;
+			import mx.events.DragEvent;
+			import mx.managers.DragManager;
+			
+			[Bindable]
+			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+			private var _updateNotesListing:Function;	
+				
+			private function dragEnterHandler(event:DragEvent):void 
+			{
+				var dropTarget:Image = event.currentTarget as Image;
+			    DragManager.acceptDragDrop(dropTarget);
+			}                  
+			
+			private function dragDropHandler(event:DragEvent):void 
+			{
+				var draggedItems:Array = event.dragSource.dataForFormat("items") as Array;
+				var draggedNote:Note = Note (draggedItems[0]);
+				deleteNote(draggedNote.id);
+			}
+			
+			private function deleteNote(noteID:String):void {
+				animateTrashBin();					
+				new DeleteNoteEvent(noteID, onDelete).dispatch();	
+			} 
+			
+			private function animateTrashBin():void {
+				trash.visible = false;
+				trash.visible = true;
+			}
+			
+			public function set updateNotesListing(method:Function):void {
+				this._updateNotesListing = method;
+			}
+			
+			private function onDelete(response:String):void {
+				serviceResponse.text = response;
+				serviceResponse.visible = false;
+				serviceResponse.visible = true;
+				
+				this._updateNotesListing();
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Rotate id="rotate"
+            angleFrom="-180"
+            angleTo="0"
+            easingFunction="Elastic.easeInOut"
+            duration="4000"/>
+    
+    <mx:Fade id="fadeOut" duration="10000" alphaFrom="1.0" alphaTo="0.0"/>        
+
+	<mx:HBox verticalAlign="middle" horizontalAlign="left" horizontalGap="10">
+		<mx:Label id="serviceResponse" showEffect="{fadeOut}" fontSize="10"/>
+		<mx:VBox>
+			<mx:Image toolTip="Drop Note here to delete it"  
+				id="trash"
+				dragEnter="dragEnterHandler(event);"
+        		dragDrop="dragDropHandler(event);" showEffect="{rotate}"  source="assets/images/trash_bin.png"/>		
+		</mx:VBox>
+	</mx:HBox>            
+	
+    	
+</mx:Canvas>

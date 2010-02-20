@@ -67,7 +67,7 @@
 			<mx:Image toolTip="Drop Note here to delete it"  
 				id="trash"
 				dragEnter="dragEnterHandler(event);"
-        		dragDrop="dragDropHandler(event);" showEffect="{rotate}"  source="assets/images/trash_bin.png"/>		
+        		dragDrop="dragDropHandler(event);" showEffect="{rotate}"  source="@Embed(source='assets/images/trash_bin.png')"/>		
 		</mx:VBox>
 	</mx:HBox>            
 	

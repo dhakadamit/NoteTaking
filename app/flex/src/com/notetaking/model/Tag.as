@@ -2,6 +2,7 @@ package com.notetaking.model
 {
 	import mx.collections.ArrayCollection;
 	
+	[Bindable]
 	public class Tag
 	{		
 		private var _name:String;

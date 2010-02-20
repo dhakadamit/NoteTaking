@@ -29,7 +29,7 @@ class NotesController < ApplicationController
   def tags
     @tags = Note.tag_counts
     respond_to do |format|
-      format.xml  { render :xml => @tags.to_xml(:only => [:count, :name])  }
+      format.xml  { render :xml => @tags.to_xml(:only => [:count, :name]) }
     end
   end
 

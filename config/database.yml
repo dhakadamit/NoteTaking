@@ -16,7 +16,7 @@ development:
   encoding: utf8
   database: blog_development
   username: root
-  password: p@ssw0rd
+  password: password
   host: localhost
   port: 3306
 

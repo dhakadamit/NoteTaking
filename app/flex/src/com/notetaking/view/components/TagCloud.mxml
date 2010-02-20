@@ -12,9 +12,22 @@
 			
 			[Bindable]
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+			private var _fetchContentTaggedWith:Function;
 			
-			public function init():void {
+			private function init():void {
+				getAllTags();
+			}
+			
+			public function getAllTags():void {
 				new GetAllTagsEvent().dispatch();
+			}
+			
+			public function onTagClick(event:MouseEvent):void {
+				this._fetchContentTaggedWith(event.currentTarget.label as String);
+			}
+			
+			public function set fetchContentTaggedWith(fetchMethod:Function):void {
+				this._fetchContentTaggedWith = fetchMethod;
 			}
 		]]>
 	</mx:Script>
@@ -24,7 +37,10 @@
 		<flexlib:FlowContainer label="Tag Cloud" paddingTop="6" paddingBottom="4" paddingLeft="4" paddingRight="4"
 					width="100%" height="100%" verticalGap="2">
 			<mx:Repeater id="tagRepeater" dataProvider="{model.tags}">
-	        	<mx:LinkButton label="{Tag(tagRepeater.currentItem).name}" color="#D19238" fontFamily="Courier New" fontWeight="normal" fontSize="11"/>
+	        	<mx:LinkButton 
+	        		label="{Tag(tagRepeater.currentItem).name}"
+	        		color="#D19238" fontFamily="Courier New" fontWeight="normal" fontSize="11"
+	        		click="onTagClick(event)"/>
 			</mx:Repeater> 
 
 		</flexlib:FlowContainer>	

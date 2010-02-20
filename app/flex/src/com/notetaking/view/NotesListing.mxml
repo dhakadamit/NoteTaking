@@ -39,7 +39,26 @@
 					paginationManager.nextSetOfResults();
 				}
 				
+				private function onNoteDelete():void {
+					initializePaginationManager();
+					tagCloud.getAllTags();
+				}
+				
+				private function findNotesTaggedWith(tag:String):void {
+					clearAllQueryFields();
+					tagQueryBox.text = tag;
+					tagQuery = tag;
+					initializePaginationManager();
+				}
+				
+				private function clearAllQueryFields():void {
+					contentQueryBox.text = "";
+					tagQueryBox.text = "";
+					titleQueryBox.text = "";
+				}
+				
 				private function findAll(event:Event):void{
+					clearAllQueryFields();
 					contentQuery = "";
 					titleQuery = "";
 					tagQuery = "";
@@ -109,7 +128,7 @@
 				</mx:Form>									
 			</mx:VBox>
 			
-			<components:TagCloud id="tagCloud" width="40%" height="70%"/>
+			<components:TagCloud id="tagCloud" width="40%" height="70%" fetchContentTaggedWith="findNotesTaggedWith"/>
 		</mx:HBox>
 	
 		
@@ -144,5 +163,5 @@
 		
 	</mx:VBox>
 	
-	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="initializePaginationManager"/>
+	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="onNoteDelete"/>
 </mx:Canvas>

@@ -68,8 +68,9 @@
 			<mx:TextInput id="tags" text="{model.selectedNote.namesOfAllTags}" width="70%"/>
 		</mx:HBox>
 		
-		<mx:HBox>
+		<mx:HBox horizontalAlign="center" verticalAlign="middle">
 			<mx:Button id="updateButton" label="Update"/>
+			<mx:Label text="OR Press Ctrl+S" color="#D19238" fontFamily="Courier New" fontWeight="normal" fontSize="11"/>	
 		</mx:HBox>	
 	</mx:VBox>
 	

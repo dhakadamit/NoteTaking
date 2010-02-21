@@ -3,6 +3,8 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.model.enums.KeyCodes;
+			import mx.controls.Alert;
 			import com.notetaking.event.DeleteNoteEvent;
 			import mx.managers.PopUpManager;
 			import com.notetaking.event.UpdateNoteEvent;
@@ -15,10 +17,20 @@
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			
 			private function init():void {
+				this.addEventListener(KeyboardEvent.KEY_UP, handleKeyboardEvent);
 				updateButton.addEventListener(MouseEvent.CLICK, updateNewNote);
 			}
 			
-			private function updateNewNote(event:Event):void {
+			private function handleKeyboardEvent(event:KeyboardEvent):void {
+	            var ctrlKeyPressed:Boolean = event.ctrlKey;
+	            if (ctrlKeyPressed) {
+	                if (event.keyCode == KeyCodes.S) { 
+						updateNewNote();             
+                	}
+            	}
+        	}
+			
+			private function updateNewNote(event:Event = null):void {
 				var note:Note = model.selectedNote;
 				note.title = title.text;
 				note.content = content.htmlText;

@@ -30,6 +30,7 @@
 					
 				private function init():void {
 					initializePaginationManager();
+					tagCloud.getAllTags();
 					attachEvents();
 				} 	
 				

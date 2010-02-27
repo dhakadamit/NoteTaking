@@ -21,9 +21,9 @@ package com.notetaking.business
 		public function getAllNotes(pageNumber:Number, contentQuery:String = "", titleQuery:String = "", tagQuery:String = ""):void {
 			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.GET_ALL_NOTES)
 							.withParameter("page_number", pageNumber)
-							.withParameter("content_query", contentQuery)
-							.withParameter("title_query", titleQuery)
-							.withParameter("tags", tagQuery)
+							.withParameter("query", contentQuery)
+//							.withParameter("title_query", titleQuery)
+							.withParameter("tag", tagQuery)
 							.build();
 			ServiceUtils.httpGet(url, this._responder);
 		}
@@ -50,9 +50,9 @@ package com.notetaking.business
 		
 		public function totalCount(contentQuery:String = "", titleQuery:String = "", tagQuery:String = ""):void {
 			var url:String = new UrlBuilder().withBaseUrl(WebServiceUrls.TOTAL_COUNT)
-							.withParameter("content_query", contentQuery)
-							.withParameter("title_query", titleQuery)
-							.withParameter("tags", tagQuery)
+							.withParameter("query", contentQuery)
+//							.withParameter("title_query", titleQuery)
+							.withParameter("tag", tagQuery)
 							.build();
 			ServiceUtils.httpGet(url, this._responder);
 		}

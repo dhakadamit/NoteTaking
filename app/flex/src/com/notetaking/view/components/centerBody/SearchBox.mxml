@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:code="http://code.google.com/p/flexlib/">
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:code="http://code.google.com/p/flexlib/" creationComplete="init();">
 	
 	<mx:Script>
 		<![CDATA[
+		
+			private var _searchFunction:Function;
+			
+			private function init():void {
+				attachEvents();	
+			}
+			
+			public function set searchFunction(value:Function):void {
+				this._searchFunction = value;
+			}
 			
 			private function attachEvents():void {
 				queryBox.addEventListener(KeyboardEvent.KEY_DOWN, submitForm);	
 			}
 			
 			private function performSearch(event:Event = null):void {
-				
+				this._searchFunction(queryBox.text);
 			}
 			
 			private function submitForm(event:KeyboardEvent):void {

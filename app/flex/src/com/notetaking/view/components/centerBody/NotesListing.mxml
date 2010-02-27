@@ -20,11 +20,20 @@
 				[Bindable]
 				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
 				
+				private var _query:String = "";
+				
 				private function init():void {
+					this._query = "";
 					paginationComponent.initializePaginationManager();
 				} 	
 								
 				private function findAll(event:Event):void{
+					this._query = "";
+					paginationComponent.initializePaginationManager();
+				}
+				
+				public function search(query:String):void {
+					this._query = query;
 					paginationComponent.initializePaginationManager();
 				}
 
@@ -32,8 +41,8 @@
 					PopUpManager.addPopUp(model.progressBar, this, false);
 					PopUpManager.centerPopUp(model.progressBar);
 				
-					new GetAllNotesEvent(pageNumber).dispatch();
-					new NotesTotalCountEvent(callback).dispatch();
+					new GetAllNotesEvent(pageNumber, _query).dispatch();
+					new NotesTotalCountEvent(callback, _query).dispatch();
 				}
 				
 				private function totalCount():Number {
@@ -42,7 +51,6 @@
 				
 				private function showItem(event:ListEvent):void {
 					model.selectedNote = Note (event.itemRenderer.data);
-//					Application.application.mainControlBar.selectedIndex = Tabs.EDIT;
 				}
 					
 			]]>

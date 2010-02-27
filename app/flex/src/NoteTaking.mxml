@@ -5,7 +5,7 @@
 	xmlns:controller="com.notetaking.controller.*"
 	layout="vertical" width="100%" height="100%"
 	paddingBottom="0"
-	verticalScrollPolicy="auto" horizontalScrollPolicy="auto"
+	verticalScrollPolicy="auto" horizontalScrollPolicy="off"
 	creationComplete="initApp();">
 	
 
@@ -21,7 +21,9 @@
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			
 			private function initApp():void {
-				applicationContent.height = Application.application.height;				
+				if(Application.application.height > 768) {
+					applicationContent.height = Application.application.height;
+				}				
 			}
 				
 		]]>
@@ -32,17 +34,21 @@
 	
 	<controller:NoteTakingApplicationController id="frontController"/> 
 	
-		<mx:VBox id="applicationContent" width="1280" paddingTop="50" paddingBottom="50" paddingLeft="20" paddingRight="20" verticalGap="0"
-			borderStyle="none">
+		<mx:HBox id="applicationContent" 
+			width="1280" minHeight="768" verticalGap="0" borderStyle="none">
 			
-			<mx:TabNavigator id="mainControlBar" width="100%" height="100%"
+			<comps:Header id="header"/>
+			<comps:CenterBody id="centerBody"/>
+			<comps:Footer id="footer"/>
+			<!-- <mx:TabNavigator id="mainControlBar" width="100%" height="100%"
 					 paddingBottom="50" paddingLeft="20" paddingRight="20">
 				<comps:NotesListing label="List All Notes" id="notesListing" top="50" bottom="50" left="20" right="20" width="100%" height="100%" paddingTop="20" paddingLeft="20" paddingRight="20" paddingBottom="20"/>
 				<comps:CreateNote label="Create a new note" id="createNote" width="100%" height="100%"/>
 				<comps:EditNote label="Edit note" id="editNote" width="100%" height="100%"/>	
 			</mx:TabNavigator>
+			-->
 			
-		</mx:VBox>
+		</mx:HBox>
 		
 </mx:Application>
 	

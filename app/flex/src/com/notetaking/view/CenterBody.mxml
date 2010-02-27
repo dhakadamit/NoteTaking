@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalGap="0" xmlns:comps="com.notetaking.view.*">
+	
+	<comps:LeftNav id="leftNav"/>
+	<comps:MainContentArea id="mainContentArea"/>
+	<comps:RightNav id="rightNav"/>
+</mx:HBox>

@@ -19,5 +19,5 @@
 		]]>
 	</mx:Script>
 
-	<code:PromptingTextInput prompt="Search" id="queryBox" width="70%" maxChars="200" />	
+	<code:PromptingTextInput prompt="Search Notes" id="queryBox" width="70%" maxChars="200" />	
 </mx:Canvas>

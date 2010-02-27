@@ -30,7 +30,7 @@
 			
 		]]>
 	</mx:Script>	
-	<mx:Label text="{_paginationManager.displayString}"/> 
+	<mx:Label text="{_paginationManager.displayString}" styleName="greyTextColor"/> 
 	<mx:LinkButton id="previous">
 		<mx:overSkin>@Embed(source='../../../../../../assets/images/prevMonthOverSkin.png')</mx:overSkin>
 		<mx:upSkin>@Embed(source='../../../../../../assets/images/prevMonthUpSkin.png')</mx:upSkin>

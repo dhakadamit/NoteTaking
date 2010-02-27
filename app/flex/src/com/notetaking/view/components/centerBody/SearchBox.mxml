@@ -7,6 +7,13 @@
 			private var _searchFunction:Function;
 			private var _displaySearchResults:Function;
 			
+			[Bindable]
+			private var _query:String;
+			
+			public function get query():String {
+				return this._query;
+			}
+			
 			private function init():void {
 				attachEvents();	
 			}
@@ -24,7 +31,8 @@
 			}
 			
 			private function performSearch(event:Event = null):void {
-				this._searchFunction(queryBox.text);
+				this._query = queryBox.text;
+				this._searchFunction(this._query);
 				this._displaySearchResults();
 			}
 			

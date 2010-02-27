@@ -4,8 +4,22 @@
 	xmlns:centerBody="com.notetaking.view.components.centerBody.*" 
 	width="100%">
 	
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			private var _query:String;
+			
+			public function set query(value:String):void {
+				this._query = value;
+			}		
+		]]>
+	</mx:Script>
+	
 	<mx:VBox id="searchResultsContainer" verticalGap="0" width="100%">
-		<mx:Label text="SearchResults" fontWeight="bold" fontSize="12"/>
+		<mx:HBox>
+			<mx:Label text="SearchResults for " fontSize="12"/>
+			<mx:Label text="'{this._query}'" fontWeight="bold" fontSize="12"/>	
+		</mx:HBox>
 		<centerBody:NotesListing id="searchResults" width="100%"/>	
 	</mx:VBox>
 </mx:Canvas>

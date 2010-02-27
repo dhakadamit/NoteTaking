@@ -13,17 +13,31 @@
 			[Bindable]
 			private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
 			private var _fetchContentTaggedWith:Function;
+			private var _showTaggedNotes:Function;
+			
+			[Bindable]
+			private var _selectedTag:String;
 			
 			private function init():void {
 				getAllTags();
+			}
+			
+			public function set showTaggedNotes(value:Function):void {
+				this._showTaggedNotes = value;
 			}
 			
 			public function getAllTags():void {
 				new GetAllTagsEvent().dispatch();
 			}
 			
+			public function get selectedTag():String {
+				return this._selectedTag;
+			}
+			
 			public function onTagClick(event:MouseEvent):void {
+				this._selectedTag = event.currentTarget.label;
 				this._fetchContentTaggedWith(event.currentTarget.label as String);
+				this._showTaggedNotes();
 			}
 			
 			public function set fetchContentTaggedWith(fetchMethod:Function):void {
@@ -33,7 +47,7 @@
 	</mx:Script>
 	
 	<mx:VBox width="100%" height="100%" verticalGap="0">
-		<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>
+		<mx:Label text="Tags" fontSize="12"/>
 		<flexlib:FlowContainer label="Tag Cloud" paddingLeft="0" paddingTop="6" paddingBottom="4" paddingRight="4"
 					width="100%" height="100%" verticalGap="2"
 					styleName="tagCloud">

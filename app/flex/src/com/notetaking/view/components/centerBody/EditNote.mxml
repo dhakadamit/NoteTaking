@@ -3,6 +3,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import com.notetaking.event.CreateNoteEvent;
 			import com.notetaking.model.enums.KeyCodes;
 			import mx.controls.Alert;
 			import com.notetaking.event.DeleteNoteEvent;
@@ -39,7 +40,13 @@
 				
 				PopUpManager.addPopUp(model.progressBar, this, true);
 				PopUpManager.centerPopUp(model.progressBar);
-				new UpdateNoteEvent(note).dispatch();
+				
+				if(note.id == null) {
+					new CreateNoteEvent(note).dispatch();
+				}
+				else {
+					new UpdateNoteEvent(note).dispatch();
+				}
 			}
 			
 			private function tagList():ArrayCollection {

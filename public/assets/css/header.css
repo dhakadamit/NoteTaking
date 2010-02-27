@@ -1,0 +1,6 @@
+/* CSS file */
+
+Canvas
+{
+	backgroundImage: "@Embed(source='../../../assets/images/header_bg.png')";
+}

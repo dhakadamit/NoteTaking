@@ -22,12 +22,14 @@
 				
 				[Bindable]
 				private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
+				[Bindable]
+				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
 				private var contentQuery:String = "";
 				private var titleQuery:String = "";					
 				private var tagQuery:String = "";					
 					
 				private function init():void {
-					initializePaginationManager();
+					paginationComponent.initializePaginationManager();
 					tagCloud.getAllTags();
 					attachEvents();
 				} 	
@@ -62,7 +64,7 @@
 					contentQuery = contentQueryBox.text;
 					titleQuery = titleQueryBox.text;
 					tagQuery = tagQueryBox.text.split(" ").join(",");
-					initializePaginationManager();
+					paginationComponent.initializePaginationManager();
 				}
 				
 				private function submitForm(event:KeyboardEvent):void {
@@ -140,7 +142,7 @@
 			</mx:columns>
 		</mx:DataGrid>
 		
-		<noteslisting:PaginationComponent id="paginationComponent" paginationManager="paginationManager"/>		
+		<noteslisting:PaginationComponent id="paginationComponent" paginationManager="{paginationManager}"/>		
 	</mx:VBox>
 	
 	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="onNoteDelete"/>

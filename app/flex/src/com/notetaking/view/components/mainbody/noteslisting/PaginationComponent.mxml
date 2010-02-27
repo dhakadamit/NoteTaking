@@ -6,7 +6,7 @@
 			import com.notetaking.utils.PaginationManager;
 			
 			[Bindable]
-			private var _paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
+			private var _paginationManager:PaginationManager;
 			
 			public function init():void {
 				attachEvent();
@@ -18,9 +18,13 @@
 				_paginationManager.nextSetOfResults();
 			}
 			
-			public void attachEvent():void {
+			public function attachEvent():void {
 				next.addEventListener(MouseEvent.CLICK, _paginationManager.nextSetOfResults);
 				previous.addEventListener(MouseEvent.CLICK, _paginationManager.previousSetOfResults);	
+			}
+			
+			public function set paginationManager(value:PaginationManager):void {
+				this._paginationManager = value;
 			}
 			
 			
@@ -28,11 +32,11 @@
 	</mx:Script>	
 	<mx:Label text="{_paginationManager.displayString}"/> 
 	<mx:LinkButton id="previous">
-		<mx:overSkin>@Embed(source='../../../assets/images/prevMonthOverSkin.png')</mx:overSkin>
-		<mx:upSkin>@Embed(source='../../../assets/images/prevMonthUpSkin.png')</mx:upSkin>
+		<mx:overSkin>@Embed(source='../../../../../../assets/images/prevMonthOverSkin.png')</mx:overSkin>
+		<mx:upSkin>@Embed(source='../../../../../../assets/images/prevMonthUpSkin.png')</mx:upSkin>
 	</mx:LinkButton>
 	<mx:LinkButton id="next">
-		<mx:overSkin>@Embed(source='../../../assets/images/nextMonthOverSkin.png')</mx:overSkin>
-		<mx:upSkin>@Embed(source='../../../assets/images/nextMonthUpSkin.png')</mx:upSkin>
+		<mx:overSkin>@Embed(source='../../../../../../assets/images/nextMonthOverSkin.png')</mx:overSkin>
+		<mx:upSkin>@Embed(source='../../../../../../assets/images/nextMonthUpSkin.png')</mx:upSkin>
 	</mx:LinkButton>
 </mx:HBox>

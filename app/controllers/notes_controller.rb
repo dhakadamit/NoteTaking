@@ -2,10 +2,10 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    if(params[:tags].nil? || params[:tags].empty?)
-      @notes = Note.all(:conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
+    if(params[:tag].nil? || params[:tag].empty?)
+      @notes = Note.all(:conditions => "title LIKE '%#{params[:query]}%' OR plain_content LIKE '%#{params[:query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
     else
-      @notes = Note.find_tagged_with(params[:tags], :conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'", :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
+      @notes = Note.find_tagged_with(params[:tag], :order => "created_at DESC").paginate :page => params[:page_number], :per_page => 10
     end
     
     respond_to do |format|
@@ -15,10 +15,10 @@ class NotesController < ApplicationController
   end
 
   def total_count
-    if(params[:tags].nil? || params[:tags].empty?)
-      @count = Note.count(:conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'")
+    if(params[:tag].nil? || params[:tag].empty?)
+      @count = Note.count(:conditions => "title LIKE '%#{params[:query]}%' OR plain_content LIKE '%#{params[:query]}%'")
     else
-      @count = Note.find_tagged_with(params[:tags], :conditions => "plain_content LIKE '%#{params[:content_query]}%' AND title LIKE '%#{params[:title_query]}%'").size
+      @count = Note.find_tagged_with(params[:tags]).size
     end
 
     respond_to do |format|

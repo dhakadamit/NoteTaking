@@ -27,7 +27,7 @@
 	
 	<mx:Style source="assets/css/main.css"/>
 	<mx:Style source="assets/css/images.css"/>
-	<mx:Style source="assets/css/header.css"/>
+	<mx:Style source="assets/css/application.css"/>
 	
 	<controller:NoteTakingApplicationController id="frontController"/> 
 	

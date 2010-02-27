@@ -55,7 +55,7 @@
 		]]>
 	</mx:Script>
 	
-	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">
+	<mx:VBox left="20" right="20" top="20" bottom="20" verticalGap="20">		
 		<mx:HBox width="100%">
 			<mx:Label text="Title" fontWeight="bold" fontSize="12"/>
 			<mx:TextInput id="title" text="{model.selectedNote.title}" width="70%"/>
@@ -71,7 +71,7 @@
 		</mx:HBox>
 		
 		<mx:HBox horizontalAlign="center" verticalAlign="middle">
-			<mx:Button id="updateButton" label="Update"/>
+			<mx:Button id="updateButton" label="Save"/>
 			<mx:Label text="OR Press Ctrl+S" color="#D19238" fontFamily="Courier New" fontWeight="normal" fontSize="11"/>	
 		</mx:HBox>	
 	</mx:VBox>

@@ -61,7 +61,9 @@
 			<mx:TextInput id="title" text="{model.selectedNote.title}" width="70%"/>
 		</mx:HBox>
 		
-		<mx:RichTextEditor id="content" htmlText="{model.selectedNote.content}" width="100%" height="100%"/>
+		<mx:RichTextEditor id="content" htmlText="{model.selectedNote.content}" width="100%" height="100%" verticalScrollPolicy="off">
+			
+		</mx:RichTextEditor>
 		
 		<mx:HBox width="100%">
 			<mx:Label text="Tags" fontWeight="bold" fontSize="12"/>

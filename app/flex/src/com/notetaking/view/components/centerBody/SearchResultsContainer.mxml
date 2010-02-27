@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:centerBody="com.notetaking.view.components.centerBody.*" 
+	width="100%">
+	
+	<mx:VBox id="searchResultsContainer" verticalGap="0" width="100%">
+		<mx:Label text="SearchResults" fontWeight="bold" fontSize="12"/>
+		<centerBody:NotesListing id="searchResults" width="100%"/>	
+	</mx:VBox>
+</mx:Canvas>

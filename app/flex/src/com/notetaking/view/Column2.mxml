@@ -4,14 +4,24 @@
 	xmlns:centerBody="com.notetaking.view.components.centerBody.*"
 	verticalGap="20">
 	
+	<mx:Script>
+		<![CDATA[
+			import com.notetaking.view.components.centerBody.SearchResultsContainer;
+			
+			private function showSearchResults():void {
+				var searchResultsContainer:SearchResultsContainer = new SearchResultsContainer();
+				searchResultsContainer.percentWidth = 100;
+				this.addChildAt(new SearchResultsContainer(), 2);
+			}
+		]]>
+	</mx:Script>
+	
 	<centerBody:TagCloud id="tagCloud" width="100%" height="110"/>
-	<centerBody:SearchBox id="searchBox" width="100%" searchFunction="{notesListing.search}"/>
+	<centerBody:SearchBox id="searchBox" width="100%" searchFunction="{notesListing.search}" displaySearchResults="{showSearchResults}"/>
 	
 	<mx:VBox verticalGap="0" width="100%">
-		<mx:Label text="Notes" fontWeight="bold" fontSize="12"/>
+		<mx:Label text="Most Recent Notes" fontWeight="bold" fontSize="12"/>
 		<centerBody:NotesListing id="notesListing" width="100%"/>	
-	</mx:VBox>
-	
-	
+	</mx:VBox>	
 	
 </mx:VBox>

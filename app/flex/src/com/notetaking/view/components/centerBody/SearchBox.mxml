@@ -5,9 +5,14 @@
 		<![CDATA[
 		
 			private var _searchFunction:Function;
+			private var _displaySearchResults:Function;
 			
 			private function init():void {
 				attachEvents();	
+			}
+			
+			public function set displaySearchResults(value:Function):void {
+				this._displaySearchResults = value;
 			}
 			
 			public function set searchFunction(value:Function):void {
@@ -20,6 +25,7 @@
 			
 			private function performSearch(event:Event = null):void {
 				this._searchFunction(queryBox.text);
+				this._displaySearchResults();
 			}
 			
 			private function submitForm(event:KeyboardEvent):void {

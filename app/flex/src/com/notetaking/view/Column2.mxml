@@ -16,7 +16,7 @@
 		]]>
 	</mx:Script>
 	
-	<centerBody:TagCloud id="tagCloud" width="100%" height="110"/>
+	<centerBody:TagCloud id="tagCloud" width="100%" height="110" fetchContentTaggedWith="{notesListing.fetchNotesTaggedWith}"/>
 	<centerBody:SearchBox id="searchBox" width="100%" searchFunction="{notesListing.search}" displaySearchResults="{showSearchResults}"/>
 	
 	<mx:VBox verticalGap="0" width="100%">

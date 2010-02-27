@@ -21,28 +21,41 @@
 				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
 				
 				private var _query:String = "";
+				private var _tag:String = "";
 				
 				private function init():void {
-					this._query = "";
+					clearParameters();
 					paginationComponent.initializePaginationManager();
 				} 	
 								
 				private function findAll(event:Event):void{
-					this._query = "";
+					clearParameters();
 					paginationComponent.initializePaginationManager();
 				}
 				
 				public function search(query:String):void {
+					clearParameters();
 					this._query = query;
 					paginationComponent.initializePaginationManager();
+				}
+				
+				public function fetchNotesTaggedWith(tag:String):void {
+					clearParameters();
+					this._tag = tag;
+					paginationComponent.initializePaginationManager();
+				}
+				
+				private function clearParameters():void {
+					this._query = "";
+					this._tag = "";
 				}
 
 				private function getAllNotes(pageNumber:Number, callback:Function):void {
 					PopUpManager.addPopUp(model.progressBar, this, false);
 					PopUpManager.centerPopUp(model.progressBar);
 				
-					new GetAllNotesEvent(pageNumber, _query).dispatch();
-					new NotesTotalCountEvent(callback, _query).dispatch();
+					new GetAllNotesEvent(pageNumber, _query, "", _tag).dispatch();
+					new NotesTotalCountEvent(callback, _query, "", _tag).dispatch();
 				}
 				
 				private function totalCount():Number {

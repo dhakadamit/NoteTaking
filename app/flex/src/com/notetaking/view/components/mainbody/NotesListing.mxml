@@ -2,7 +2,7 @@
 <mx:Canvas width="100%"
 	 xmlns:mx="http://www.adobe.com/2006/mxml"
 	 xmlns:components="com.notetaking.view.components.*"
-	 creationComplete="init();" show="init();">
+	 creationComplete="init();" show="init();" xmlns:noteslisting="com.notetaking.view.components.mainbody.noteslisting.*">
 		
 		<mx:Script>
 			<![CDATA[
@@ -22,8 +22,6 @@
 				
 				[Bindable]
 				private var model:NoteTakingApplicationModelLocator = NoteTakingApplicationModelLocator.getInstance();
-				[Bindable]
-				private var paginationManager:PaginationManager = new PaginationManager(getAllNotes, totalCount);
 				private var contentQuery:String = "";
 				private var titleQuery:String = "";					
 				private var tagQuery:String = "";					
@@ -34,14 +32,8 @@
 					attachEvents();
 				} 	
 				
-				private function initializePaginationManager():void {
-					paginationManager.totalResultsPerPage = 10;
-					paginationManager.initialize();
-					paginationManager.nextSetOfResults();
-				}
-				
 				private function onNoteDelete():void {
-					initializePaginationManager();
+					paginationComponent.initializePaginationManager();
 					tagCloud.getAllTags();
 				}
 				
@@ -49,7 +41,7 @@
 					clearAllQueryFields();
 					tagQueryBox.text = tag;
 					tagQuery = tag;
-					initializePaginationManager();
+					paginationComponent.initializePaginationManager();
 				}
 				
 				private function clearAllQueryFields():void {
@@ -63,7 +55,7 @@
 					contentQuery = "";
 					titleQuery = "";
 					tagQuery = "";
-					initializePaginationManager();
+					paginationComponent.initializePaginationManager();
 				}
 				
 				private function performSearch(event:Event = null):void {
@@ -80,8 +72,6 @@
 				
 				private function attachEvents():void {
 					searchForm.addEventListener(KeyboardEvent.KEY_DOWN, submitForm);
-					next.addEventListener(MouseEvent.CLICK, paginationManager.nextSetOfResults);
-					previous.addEventListener(MouseEvent.CLICK, paginationManager.previousSetOfResults);
 					submitQuery.addEventListener(MouseEvent.CLICK, performSearch);
 					listAll.addEventListener(MouseEvent.CLICK, findAll);	
 				}
@@ -150,18 +140,7 @@
 			</mx:columns>
 		</mx:DataGrid>
 		
-		<mx:HBox verticalAlign="middle" horizontalGap="10">
-			<mx:Label text="{paginationManager.displayString}"/> 
-			<mx:LinkButton id="previous">
-				<mx:overSkin>@Embed(source='../../../assets/images/prevMonthOverSkin.png')</mx:overSkin>
-				<mx:upSkin>@Embed(source='../../../assets/images/prevMonthUpSkin.png')</mx:upSkin>
-			</mx:LinkButton>
-			<mx:LinkButton id="next">
-				<mx:overSkin>@Embed(source='../../../assets/images/nextMonthOverSkin.png')</mx:overSkin>
-				<mx:upSkin>@Embed(source='../../../assets/images/nextMonthUpSkin.png')</mx:upSkin>
-			</mx:LinkButton>
-		</mx:HBox>
-		
+		<noteslisting:PaginationComponent id="paginationComponent" paginationManager="paginationManager"/>		
 	</mx:VBox>
 	
 	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="onNoteDelete"/>

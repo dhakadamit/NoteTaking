@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:code="http://code.google.com/p/flexlib/">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			private function attachEvents():void {
+				queryBox.addEventListener(KeyboardEvent.KEY_DOWN, submitForm);	
+			}
+			
+			private function performSearch(event:Event = null):void {
+				
+			}
+			
+			private function submitForm(event:KeyboardEvent):void {
+				if(event.charCode == 13)
+					performSearch();
+			}
+		]]>
+	</mx:Script>
+
+	<code:PromptingTextInput prompt="Search" id="queryBox" width="70%" maxChars="200" />	
+</mx:Canvas>

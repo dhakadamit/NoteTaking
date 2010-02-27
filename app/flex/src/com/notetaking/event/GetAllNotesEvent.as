@@ -10,7 +10,7 @@ package com.notetaking.event
 		private var _titleQuery:String;
 		private var _tagQuery:String;
 
-		public function GetAllNotesEvent(pageNumber:Number, contentQuery:String, titleQuery:String, tagQuery:String)
+		public function GetAllNotesEvent(pageNumber:Number, contentQuery:String = "", titleQuery:String = "", tagQuery:String = "")
 		{
 			super(GET_ALL_NOTES);
 			this._pageNumber = pageNumber;

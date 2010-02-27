@@ -10,7 +10,7 @@ package com.notetaking.event
 		private var _titleQuery:String;
 		private var _tagQuery:String;
 
-		public function NotesTotalCountEvent(contentQuery:String, titleQuery:String, tagQuery:String, callback:Function = null)
+		public function NotesTotalCountEvent(callback:Function = null, contentQuery:String = "", titleQuery:String = "", tagQuery:String = "")
 		{
 			super(NOTES_TOTAL_COUNT);
 			this._callback = callback;

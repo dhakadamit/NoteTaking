@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:centerBody="com.notetaking.view.components.centerBody.*"
+	verticalGap="20">
+	
+	<centerBody:SearchBox id="searchBox" width="100%"/>
+	<centerBody:NotesListing id="notesListing" width="100%"/>
+	<centerBody:TagCloud id="tagCloud" width="100%"/>
+	
+</mx:VBox>

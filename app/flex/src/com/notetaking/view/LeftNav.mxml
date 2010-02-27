@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:mainbody="com.notetaking.view.components.mainbody.*">
 	
-	<mainbody:NotesListing/>
+	<mainbody:NotesListing />
 </mx:VBox>

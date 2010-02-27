@@ -144,6 +144,4 @@
 		
 		<noteslisting:PaginationComponent id="paginationComponent" paginationManager="{paginationManager}"/>		
 	</mx:VBox>
-	
-	<components:TrashBin id="trashBin" bottom="20" right="50" updateNotesListing="onNoteDelete"/>
 </mx:Canvas>

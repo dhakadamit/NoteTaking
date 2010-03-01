@@ -18,11 +18,11 @@ class NotesController < ApplicationController
     if(params[:tag].nil? || params[:tag].empty?)
       @count = Note.count(:conditions => "title LIKE '%#{params[:query]}%' OR plain_content LIKE '%#{params[:query]}%'")
     else
-      @count = Note.find_tagged_with(params[:tags]).size
+      @count = Note.find_tagged_with(params[:tag]).size
     end
 
     respond_to do |format|
-      format.xml  { render :xml => {:total_count => @count}.to_xml  }
+      format.xml  { render :xml => {:total_count => @count}. to_xml }
     end
   end
 

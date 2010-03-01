@@ -2,25 +2,35 @@
 <mx:VBox 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:centerBody="com.notetaking.view.components.centerBody.*"
-	verticalGap="20">
+	verticalGap="20" creationComplete="init();">
 	
 	<mx:Script>
 		<![CDATA[
 			import com.notetaking.view.components.centerBody.TaggedNotesContainer;
 			import com.notetaking.view.components.centerBody.SearchResultsContainer;
 			
+			private function init():void {
+				attachEvents();	
+			}
+			
+			private function attachEvents():void {
+				backToMostRecentNotes.addEventListener(MouseEvent.CLICK, showMostRecentNotes);
+			}
+			
 			private function showSearchResults():void {
-				var searchResultsContainer:SearchResultsContainer = new SearchResultsContainer();
-				searchResultsContainer.percentWidth = 100;
-				searchResultsContainer.query = searchBox.query;
-				this.addChildAt(searchResultsContainer, 2);
+				this.titleForNotesListing.htmlText = "Search Results for <b>'" + searchBox.query.toUpperCase() + "'</b>";
+				this.backToMostRecentNotes.visible = true;
 			}
 			
 			private function showTaggedNotes():void {
-				var taggedNotesContainer:TaggedNotesContainer = new TaggedNotesContainer();
-				taggedNotesContainer.percentWidth = 100;
-				taggedNotesContainer.selectedTag = tagCloud.selectedTag;
-				this.addChildAt(taggedNotesContainer, 2);
+				this.titleForNotesListing.htmlText = "Notes tagged with <b>'" + tagCloud.selectedTag + "'</b>";
+				this.backToMostRecentNotes.visible = true;
+			}
+			
+			private function showMostRecentNotes(event:Event):void {
+				this.titleForNotesListing.htmlText = "Most Recent Notes";
+				this.backToMostRecentNotes.visible = false;
+				this.notesListing.findAll();
 			}
 		]]>
 	</mx:Script>
@@ -32,8 +42,14 @@
 	<centerBody:SearchBox id="searchBox" width="100%" searchFunction="{notesListing.search}" displaySearchResults="{showSearchResults}"/>
 	
 	<mx:VBox verticalGap="0" width="100%">
-		<mx:Label text="Most Recent Notes" fontSize="12"/>
-		<centerBody:NotesListing id="notesListing" width="100%"/>	
+		<mx:Label id="titleForNotesListing" text="Most Recent Notes" fontSize="12"/>
+		<centerBody:NotesListing id="notesListing" width="100%"/>
+		<mx:Spacer height="20"/>
+		<mx:HBox width="100%">
+			<mx:Spacer width="40%"/> 
+			<mx:LinkButton id="backToMostRecentNotes" visible="false" fontSize="9" label="Back to Most Recent Notes"/>	
+		</mx:HBox>
+		
 	</mx:VBox>	
 	
 </mx:VBox>

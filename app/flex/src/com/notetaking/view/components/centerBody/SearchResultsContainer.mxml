@@ -2,7 +2,7 @@
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:centerBody="com.notetaking.view.components.centerBody.*" 
-	width="100%">
+	width="100%" minHeight="100" creationCompleteEffect="{wipeDown}">
 	
 	<mx:Script>
 		<![CDATA[
@@ -14,6 +14,8 @@
 			}		
 		]]>
 	</mx:Script>
+	
+	<mx:WipeDown id="wipeDown" duration="2000"/>
 	
 	<mx:VBox id="searchResultsContainer" verticalGap="0" width="100%">
 		<mx:HBox>

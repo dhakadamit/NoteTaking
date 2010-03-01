@@ -26,6 +26,7 @@
 				private function init():void {
 					clearParameters();
 					paginationComponent.initializePaginationManager();
+					model.updateNotesListing = this.findAll;
 				} 	
 								
 				public function findAll(event:Event = null):void{

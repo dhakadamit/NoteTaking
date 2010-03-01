@@ -24,6 +24,7 @@ package com.notetaking.command
 		public function result(data:Object):void
 		{
 			model.hideProgressBar();
+			model.updateNotesListing();
 		}
 		
 		public function fault(info:Object):void

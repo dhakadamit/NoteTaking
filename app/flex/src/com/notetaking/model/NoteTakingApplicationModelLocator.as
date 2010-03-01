@@ -19,6 +19,7 @@ package com.notetaking.model
 		public var notesTotalCount:Number;
 		public var selectedNote:Note;
 		public var progressBar:IFlexDisplayObject;
+		public var updateNotesListing:Function;
 		
 		public static function getInstance():NoteTakingApplicationModelLocator{
             if (modelLocator == null) {

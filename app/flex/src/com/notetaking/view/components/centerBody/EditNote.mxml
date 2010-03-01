@@ -3,6 +3,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import mx.core.Application;
 			import com.notetaking.event.CreateNoteEvent;
 			import com.notetaking.model.enums.KeyCodes;
 			import mx.controls.Alert;
@@ -19,19 +20,19 @@
 			
 			private function init():void {
 				this.addEventListener(KeyboardEvent.KEY_UP, handleKeyboardEvent);
-				updateButton.addEventListener(MouseEvent.CLICK, updateNewNote);
+				updateButton.addEventListener(MouseEvent.CLICK, updateNote);
 			}
 			
 			private function handleKeyboardEvent(event:KeyboardEvent):void {
 	            var ctrlKeyPressed:Boolean = event.ctrlKey;
 	            if (ctrlKeyPressed) {
 	                if (event.keyCode == KeyCodes.S) { 
-						updateNewNote();             
+						updateNote();             
                 	}
             	}
         	}
 			
-			private function updateNewNote(event:Event = null):void {
+			private function updateNote(event:Event = null):void {
 				var note:Note = model.selectedNote;
 				note.title = title.text;
 				note.content = content.htmlText;

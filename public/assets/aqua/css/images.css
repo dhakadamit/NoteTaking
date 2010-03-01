@@ -1,0 +1,163 @@
+
+acc
+{
+	selected: Embed(source="../images/acc_selected.png");
+	up: Embed(source="../images/acc.png");
+}
+application
+{
+	bg: Embed(source="../images/application_bg.png");
+}
+bottom.arrow
+{
+	over: Embed(source="../images/bottom_arrow_over.png");
+	up: Embed(source="../images/bottom_arrow_up.png");
+}
+button.bar
+{
+	over: Embed(source="../images/button_bar_over.png");
+	selected: Embed(source="../images/button_bar_selected.png");
+	up: Embed(source="../images/button_bar_up.png");
+}
+button.bar2
+{
+	selected: Embed(source="../images/button_bar2_selected.png");
+	up: Embed(source="../images/button_bar2_up.png");
+}
+button
+{
+	disabled: Embed(source="../images/button_disabled.png");
+	over: Embed(source="../images/button_over.png");
+	up: Embed(source="../images/button_up.png");
+}
+CheckBox
+{
+	disabledIcon: Embed(source="../images/CheckBox_disabledIcon.png");
+	downIcon: Embed(source="../images/CheckBox_downIcon.png");
+	overIcon: Embed(source="../images/CheckBox_overIcon.png");
+	selectedDisabledIcon: Embed(source="../images/CheckBox_selectedDisabledIcon.png");
+	selectedDownIcon: Embed(source="../images/CheckBox_selectedDownIcon.png");
+	selectedOverIcon: Embed(source="../images/CheckBox_selectedOverIcon.png");
+	selectedUpIcon: Embed(source="../images/CheckBox_selectedUpIcon.png");
+	upIcon: Embed(source="../images/CheckBox_upIcon.png");
+}
+ColorPicker
+{
+	disabledSkin: Embed(source="../images/ColorPicker_disabledSkin.png");
+	downSkin: Embed(source="../images/ColorPicker_downSkin.png");
+	overSkin: Embed(source="../images/ColorPicker_overSkin.png");
+	upSkin: Embed(source="../images/ColorPicker_upSkin.png");
+}
+comboBox
+{
+	disabled: Embed(source="../images/comboBox_disabled.png");
+	over: Embed(source="../images/comboBox_over.png");
+	up: Embed(source="../images/comboBox_up.png");
+}
+content
+{
+	bg: Embed(source="../images/content_bg.png");
+}
+firstButton
+{
+	over: Embed(source="../images/firstButton_over.png");
+	selected: Embed(source="../images/firstButton_selected.png");
+	up: Embed(source="../images/firstButton_up.png");
+}
+firstButton2
+{
+	selected: Embed(source="../images/firstButton2_selected.png");
+	up: Embed(source="../images/firstButton2_up.png");
+}
+header
+{
+	bg: Embed(source="../images/header_bg.png");
+}
+ProgressBar
+{
+	indeterminateSkin: Embed(source="../images/indeterminateSkin.png");
+}
+input
+{
+	bg: Embed(source="../images/input_bg.png");
+}
+input.disabled
+{
+	bg: Embed(source="../images/input_disabled_bg.png");
+}
+lastButton
+{
+	over: Embed(source="../images/lastButton_over.png");
+	selected: Embed(source="../images/lastButton_selected.png");
+	up: Embed(source="../images/lastButton_up.png");
+}
+lastButton2
+{
+	selected: Embed(source="../images/lastButton2_selected.png");
+	up: Embed(source="../images/lastButton2_up.png");
+}
+menuBar
+{
+	bg: Embed(source="../images/menuBar_bg.png");
+	itemOver: Embed(source="../images/menuBar_itemOver.png");
+}
+new
+{
+	page: Embed(source="../images/new_page.png");
+}
+NS
+{
+	downArrowDownSkin: Embed(source="../images/NS_downArrowDownSkin.png");
+	downArrowOverSkin: Embed(source="../images/NS_downArrowOverSkin.png");
+	downArrowUpSkin: Embed(source="../images/NS_downArrowUpSkin.png");
+	upArrowDownSkin: Embed(source="../images/NS_upArrowDownSkin.png");
+	upArrowOverSkin: Embed(source="../images/NS_upArrowOverSkin.png");
+	upArrowUpSkin: Embed(source="../images/NS_upArrowUpSkin.png");
+}
+panel.dec
+{
+	left: Embed(source="../images/panel_dec_left.png");
+	right: Embed(source="../images/panel_dec_right.png");
+}
+progressbar
+{
+	bar: Embed(source="../images/progressbar_bar.png");
+	bg: Embed(source="../images/progressbar_bg.png");
+}
+RadioButton
+{
+	disabledIcon: Embed(source="../images/RadioButton_disabledIcon.png");
+	downIcon: Embed(source="../images/RadioButton_downIcon.png");
+	overIcon: Embed(source="../images/RadioButton_overIcon.png");
+	selectedDisabledIcon: Embed(source="../images/RadioButton_selectedDisabledIcon.png");
+	selectedDownIcon: Embed(source="../images/RadioButton_selectedDownIcon.png");
+	selectedOverIcon: Embed(source="../images/RadioButton_selectedOverIcon.png");
+	selectedUpIcon: Embed(source="../images/RadioButton_selectedUpIcon.png");
+	upIcon: Embed(source="../images/RadioButton_upIcon.png");
+}
+slider
+{
+	thumbDown: Embed(source="../images/slider_thumbDown.png");
+	thumbOver: Embed(source="../images/slider_thumbOver.png");
+	thumbUp: Embed(source="../images/slider_thumbUp.png");
+	track: Embed(source="../images/slider_track.png");
+}
+tab
+{
+	disabled: Embed(source="../images/tab_disabled.png");
+	selected: Embed(source="../images/tab_selected.png");
+}
+thumb
+{
+	over: Embed(source="../images/thumb_over.png");
+	up: Embed(source="../images/thumb_up.png");
+}
+top.arrow
+{
+	over: Embed(source="../images/top_arrow_over.png");
+	up: Embed(source="../images/top_arrow_up.png");
+}
+vslider
+{
+	track: Embed(source="../images/vslider_track.png");
+}
